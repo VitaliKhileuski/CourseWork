@@ -2,29 +2,32 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Xml.Serialization;
 using WPFCourseWork.Models.Persons;
 
 namespace WPFCourseWork.Models.ElementsOfUniversity
 {
-  public   class StudentGroup
+    [Serializable]
+    [XmlInclude(typeof(Student))]
+    public   class StudentGroup
     {
         private string speciality;
-        private ICollection<Student> students;
+        private ObservableCollection<Student> students;
         private Student headOfTheGroup;
-        private int groupnumber;
-        private int semestr;
+        private int? groupnumber;
+        private int? semestr;
 
 
-        public ICollection<Student> Students { get { return students; } set { students = value; } }
+        public ObservableCollection<Student> Students { get { return students; } set { students = value; } }
         public Student HeadOfTheGroup { get { return headOfTheGroup; } set { headOfTheGroup = value; } }
         
 
         public string Speciality { get { return speciality; } set { speciality = value; } }
 
        
-        public int GroupNumber { get { return groupnumber; } set { groupnumber = value; } }
+        public int? GroupNumber { get { return groupnumber; } set { groupnumber = value; } }
 
-        public int Semestr { get { return semestr; } set { semestr = value;  } }
+        public int? Semestr { get { return semestr; } set { semestr = value;  } }
 
 
         public StudentGroup(string speciality, ObservableCollection<Student> students, Student headOfTheGroup,int groupNumber,int semestr)

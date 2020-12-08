@@ -36,7 +36,7 @@
 
             </StackPanel>
 
-            <Button Content="Сохранить" Command="{Binding Path=SavePropGroupStudentCommand}" BorderThickness="1.4" BorderBrush="Black"  Margin="0 25 0 25" MinHeight="40" MaxWidth="300"></Button>
+            <Button Content="Сохранить" Command="{Binding Path=SavePropGroupCommand}" BorderThickness="1.4" BorderBrush="Black"  Margin="0 25 0 25" MinHeight="40" MaxWidth="300"></Button>
             <Line Stroke="Black"  Stretch="Fill"  X1="1"></Line>        
 
         </StackPanel>
@@ -61,7 +61,7 @@
             </StackPanel>
             <Button Content="Добавить" Command="{Binding AddStudentCommand}"  BorderThickness="1.4" BorderBrush="Black"  Margin="0 25 0 30" MinHeight="40" MaxWidth="300"   ></Button>
             <Line Stroke="Black"  Stretch="Fill"  X1="1"  Margin="0 0 0 25"></Line>
-            <Button Content="Сохранить группу"  BorderThickness="1.4" BorderBrush="Black" MinHeight="50" MaxWidth="400"></Button>
+            <Button Content="Сохранить группу"  Command="{Binding SaveGroupCommand}" BorderThickness="1.4" BorderBrush="Black" MinHeight="50" MaxWidth="400"></Button>
         </StackPanel>
 
         <DataGrid FontSize="20"  IsReadOnly="True" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" ItemsSource="{Binding Students}" AutoGenerateColumns="False">

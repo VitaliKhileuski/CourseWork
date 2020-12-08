@@ -7,8 +7,16 @@ using WPFCourseWork.Models.ElementsOfUniversity;
 
 namespace WPFCourseWork.Data
 {
-   public class StudentGroupsDataBase
+    public class StudentGroupsDataBase
     {
         public List<StudentGroup> studentGroups;
+
+
+
+        public StudentGroupsDataBase()
+        {
+
+            studentGroups=Serializer.DeserializeStudentsDataBase();
+        }
     }
 }

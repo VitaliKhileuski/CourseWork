@@ -4,7 +4,8 @@ using System.Text;
 
 namespace WPFCourseWork.Models.Persons
 {
-     public class Student : UniversityPerson
+    [Serializable]
+    public class Student : UniversityPerson
     {
 
        

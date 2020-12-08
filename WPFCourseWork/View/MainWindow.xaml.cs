@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using WPFCourseWork.Data;
 using WPFCourseWork.View;
 using WPFCourseWork.ViewModels;
+using WPFCourseWork.Models;
+using WPFCourseWork.Models.ElementsOfUniversity;
 
 namespace WPFCourseWork.ViewModels
 {
@@ -31,15 +33,19 @@ namespace WPFCourseWork.ViewModels
 }
 public partial class MainWindow : Window, IMainWindowsCodeBehind
     {
+
+
+        public StudentGroupsDataBase groupsDataBase=new StudentGroupsDataBase();
+         
         public MainWindow()
         {
+            
             InitializeComponent();
             this.Loaded += MainWindow_Loaded;
         }
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            StudentGroupsDataBase groupsDataBase = new StudentGroupsDataBase();
-            groupsDataBase.studentGroups = Serializer.DeserializeStudentsDataBase();
+            
             //data
             //загрузка вьюмодел для кнопок меню
             MainWindowViewModel viewModel = new MainWindowViewModel();
@@ -66,13 +72,13 @@ public partial class MainWindow : Window, IMainWindowsCodeBehind
                     break;
                 case ViewType.CreateGroup:
                     CreateGroup CreateGroupView = new CreateGroup();
-                    CreateGroupViewModel CreateGroupViewModel = new CreateGroupViewModel(this);
+                    CreateGroupViewModel CreateGroupViewModel = new CreateGroupViewModel(this,groupsDataBase);
                     CreateGroupView.DataContext =CreateGroupViewModel;
                     this.Page.Content =CreateGroupView;
                     break;
                 case ViewType.LoginGroup:
                     LoginGroup LoginGroupView = new LoginGroup();
-                    CreateGroupViewModel LoginGroupViewModel = new CreateGroupViewModel(this);
+                    CreateGroupViewModel LoginGroupViewModel = new CreateGroupViewModel(this,groupsDataBase);
                     LoginGroupView.DataContext = LoginGroupViewModel;
                     this.Page.Content = LoginGroupView;
                     break;

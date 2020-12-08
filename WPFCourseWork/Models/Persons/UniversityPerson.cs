@@ -4,8 +4,10 @@ using System.Text;
 
 namespace WPFCourseWork.Models.Persons
 {
+    [Serializable]
     public abstract partial   class UniversityPerson
     {
+        
         private string name;
         private string surname;
         private string thirdname;

@@ -15,13 +15,13 @@ namespace WPFCourseWork
         public static void SerializeStudentsDataBase(List<StudentGroup> studentsGroups)
         {
             XmlSerializer formatter = new XmlSerializer(typeof(List<StudentGroup>));
-            using FileStream fileStream = new FileStream("StudentsDataBase.xml", FileMode.OpenOrCreate);
+            using FileStream fileStream = new FileStream("GroupOfStudentsDataBase.xml", FileMode.OpenOrCreate);
             formatter.Serialize(fileStream,studentsGroups);
         }
         public static List<StudentGroup> DeserializeStudentsDataBase()
         {
-            XmlSerializer formatter = new XmlSerializer(typeof(List<Student>));
-            using FileStream fileStream = new FileStream("StudentsDataBase.xml", FileMode.OpenOrCreate);
+            XmlSerializer formatter = new XmlSerializer(typeof(List<StudentGroup>));
+            using FileStream fileStream = new FileStream("GroupOfStudentsDataBase.xml", FileMode.OpenOrCreate);
             List<StudentGroup> studentGroups = (List<StudentGroup>)formatter.Deserialize(fileStream);
             return studentGroups;
         }
