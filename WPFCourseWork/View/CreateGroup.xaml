@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="WPFCourseWork.View.CreateGroup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFCourseWork.View"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800" >
+
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="190*"></RowDefinition>
+            <RowDefinition Height="259*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" >
+            <TextBlock Margin="0 0 0 80" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">Создание группы</TextBlock>
+            <StackPanel Orientation="Horizontal"    >
+
+                <StackPanel Orientation="vertical" Margin="25 0 0 0">
+                    <TextBlock Text="Специальность" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" RenderTransformOrigin="0.488,0.251" Height="25"/>
+                    <TextBlock Text="Cеместр" FontSize="20" FontWeight="Bold" Margin="0 1 20 10"/>
+                    <TextBlock Text="Номер группы" FontSize="20" FontWeight="Bold" Margin="0 0 20 0"/>
+
+                </StackPanel>
+                <StackPanel Orientation="Vertical" >
+                    <TextBox Text="{Binding Speciality, UpdateSourceTrigger=PropertyChanged}"  MinWidth="210"  Margin="0 0 0 10" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <TextBox Text="{Binding Semestr, UpdateSourceTrigger=PropertyChanged}" MinWidth="210" Margin="0 0 0 10" FontSize="16"   BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <TextBox Text="{Binding GroupNumber, UpdateSourceTrigger=PropertyChanged}" MinWidth="210"  FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
+
+                    <StackPanel/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <Button Content="Сохранить" Command="{Binding Path=SavePropGroupStudentCommand}" BorderThickness="1.4" BorderBrush="Black"  Margin="0 25 0 25" MinHeight="40" MaxWidth="300"></Button>
+            <Line Stroke="Black"  Stretch="Fill"  X1="1"></Line>        
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical"  >
+            <TextBlock Margin="0 0 0 80" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">Добавление студента в группу</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" Margin="25 0 0 0">
+                    <TextBlock Text="Имя" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" RenderTransformOrigin="0.488,0.251" Height="25"/>
+                    <TextBlock Text="Фамилия" FontSize="20" FontWeight="Bold" Margin="0 1 20 10"/>
+                    <TextBlock Text="Отчество" FontSize="20" FontWeight="Bold" Margin="0 0 20 10"/>
+                    <TextBlock Text="Назначить старостой" FontSize="20" FontWeight="Bold" Margin="0 0 20 10"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <TextBox x:Name="NameTextBox" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"  MinWidth="210"  Margin="0 0 0 10" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <TextBox x:Name="SurnameTextBox"  Text="{Binding Surname, UpdateSourceTrigger=PropertyChanged}" MinWidth="210" Margin="0 0 0 10" FontSize="16"   BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <TextBox x:Name="ThirdNameTextBox" Text="{Binding Thirdname, UpdateSourceTrigger=PropertyChanged}" MinWidth="210"  Margin="0 0 0 20" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <CheckBox   BorderThickness="1.4" BorderBrush="Black"></CheckBox>
+                </StackPanel>
+
+
+            </StackPanel>
+            <Button Content="Добавить" Command="{Binding AddStudentCommand}"  BorderThickness="1.4" BorderBrush="Black"  Margin="0 25 0 30" MinHeight="40" MaxWidth="300"   ></Button>
+            <Line Stroke="Black"  Stretch="Fill"  X1="1"  Margin="0 0 0 25"></Line>
+            <Button Content="Сохранить группу"  BorderThickness="1.4" BorderBrush="Black" MinHeight="50" MaxWidth="400"></Button>
+        </StackPanel>
+
+        <DataGrid FontSize="20"  IsReadOnly="True" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" ItemsSource="{Binding Students}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Binding="{Binding Name}" Header="Имя"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Surname}"  Header="Фамилия"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Thirdname}" Header="Отчество"></DataGridTextColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+
+
+
+    </Grid>
+</UserControl>
