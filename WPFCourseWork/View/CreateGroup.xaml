@@ -75,7 +75,7 @@
             <TextBlock  Text="{Binding Speciality, UpdateSourceTrigger=PropertyChanged, StringFormat=Специальность:{0}}"    FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
             <TextBlock  Text="{Binding Semestr, UpdateSourceTrigger=PropertyChanged, StringFormat=Семестр: {0}}"    FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
             <TextBlock  Text="{Binding GroupNumber, UpdateSourceTrigger=PropertyChanged, StringFormat=Номер группы: {0}}"    FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
-            <TextBlock  Text="Староста:" FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
+            <TextBlock  Text="{Binding HeadOfTheGroup, UpdateSourceTrigger=PropertyChanged, StringFormat=Староста: {0}}" FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
         </StackPanel>
         
         

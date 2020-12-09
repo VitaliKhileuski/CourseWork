@@ -22,4 +22,48 @@
     <GroupNumber>191</GroupNumber>
     <Semestr>3</Semestr>
   </StudentGroup>
+  <StudentGroup>
+    <Students>
+      <Student>
+        <Name>Юлиан</Name>
+        <Surname>Айрапетов</Surname>
+        <Thirdname>Карабахов</Thirdname>
+      </Student>
+      <Student>
+        <Name>Максим</Name>
+        <Surname>Кораблев</Surname>
+        <Thirdname>Александрович</Thirdname>
+      </Student>
+    </Students>
+    <HeadOfTheGroup>
+      <Name>Юлиан</Name>
+      <Surname>Айрапетов</Surname>
+      <Thirdname>Карабахов</Thirdname>
+    </HeadOfTheGroup>
+    <Speciality>ПОИТ</Speciality>
+    <GroupNumber>191</GroupNumber>
+    <Semestr>3</Semestr>
+  </StudentGroup>
+  <StudentGroup>
+    <Students>
+      <Student>
+        <Name>Диана</Name>
+        <Surname>Хломко</Surname>
+        <Thirdname>Олеговна</Thirdname>
+      </Student>
+      <Student>
+        <Name>Виталий</Name>
+        <Surname>Хилевский</Surname>
+        <Thirdname>Андреевич</Thirdname>
+      </Student>
+    </Students>
+    <HeadOfTheGroup>
+      <Name>Диана</Name>
+      <Surname>Хломко</Surname>
+      <Thirdname>Олеговна</Thirdname>
+    </HeadOfTheGroup>
+    <Speciality>Поит</Speciality>
+    <GroupNumber>191</GroupNumber>
+    <Semestr>3</Semestr>
+  </StudentGroup>
 </ArrayOfStudentGroup>

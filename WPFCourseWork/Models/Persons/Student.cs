@@ -30,5 +30,10 @@ namespace WPFCourseWork.Models.Persons
         //        throw new ArgumentOutOfRangeException("student already on the last course");
         //    }
         //}
+
+        public override string ToString()
+        {
+            return Surname + " " + Name + " " + Thirdname;
+        }
     }
 }

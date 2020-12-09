@@ -131,7 +131,18 @@ namespace WPFCourseWork.ViewModels
             ClearProperties();
             _MainCodeBehind.LoadView(ViewType.MainMenu);
         }
-        private bool CanSaveGroupCommandExecuted(object p) => true;
+        private bool CanSaveGroupCommandExecuted(object p)
+        {
+            if (Students.Count == 0 || string.IsNullOrEmpty(Speciality) || GroupNumber == null || semestr == null || HeadOfTheGroup == null){
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        
+           
+        }
         public LambdaCommand SaveGroupCommand
         {
             get
