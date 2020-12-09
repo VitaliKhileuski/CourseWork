@@ -19,12 +19,11 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
 
 
         public ObservableCollection<Student> Students { get { return students; } set { students = value; } }
+       
         public Student HeadOfTheGroup { get { return headOfTheGroup; } set { headOfTheGroup = value; } }
         
-
         public string Speciality { get { return speciality; } set { speciality = value; } }
 
-       
         public int? GroupNumber { get { return groupnumber; } set { groupnumber = value; } }
 
         public int? Semestr { get { return semestr; } set { semestr = value;  } }
@@ -41,6 +40,7 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
         public StudentGroup()
         {
             Students = new  ObservableCollection<Student>();
+            HeadOfTheGroup = new Student();
         }
 
         public int GetAmountOfStudents()

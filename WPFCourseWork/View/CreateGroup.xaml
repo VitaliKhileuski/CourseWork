@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800" >
 
-    <Grid ShowGridLines="False">
+    <Grid ShowGridLines="false">
         <Grid.RowDefinitions>
             <RowDefinition Height="190*"></RowDefinition>
             <RowDefinition Height="259*"></RowDefinition>
@@ -17,8 +17,12 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" >
-            <TextBlock Margin="0 0 0 80" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">Создание группы</TextBlock>
-            <StackPanel Orientation="Horizontal"    >
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Назад"  Margin="10 0 200 70" Command="{Binding Path=BackCommand}" BorderThickness="1.4" BorderBrush="Black"  MaxHeight="35" MinWidth="70" ></Button>
+                <TextBlock Margin="0 0 0 80" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">Создание группы</TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
 
                 <StackPanel Orientation="vertical" Margin="25 0 0 0">
                     <TextBlock Text="Специальность" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" RenderTransformOrigin="0.488,0.251" Height="25"/>
@@ -27,9 +31,9 @@
 
                 </StackPanel>
                 <StackPanel Orientation="Vertical" >
-                    <TextBox Text="{Binding Speciality, UpdateSourceTrigger=PropertyChanged}"  MinWidth="210"  Margin="0 0 0 10" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
-                    <TextBox Text="{Binding Semestr, UpdateSourceTrigger=PropertyChanged}" MinWidth="210" Margin="0 0 0 10" FontSize="16"   BorderThickness="1.4" BorderBrush="Black"></TextBox>
-                    <TextBox Text="{Binding GroupNumber, UpdateSourceTrigger=PropertyChanged}" MinWidth="210"  FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <TextBox Text="{Binding TempSpeciality, UpdateSourceTrigger=PropertyChanged}"  MinWidth="210"  Margin="0 0 0 10" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <TextBox Text="{Binding TempSemestr, UpdateSourceTrigger=PropertyChanged}" MinWidth="210" Margin="0 0 0 10" FontSize="16"   BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <TextBox Text="{Binding TempGroupNumber, UpdateSourceTrigger=PropertyChanged}" MinWidth="210"  FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
 
                     <StackPanel/>
                 </StackPanel>
@@ -37,7 +41,8 @@
             </StackPanel>
 
             <Button Content="Сохранить" Command="{Binding Path=SavePropGroupCommand}" BorderThickness="1.4" BorderBrush="Black"  Margin="0 25 0 25" MinHeight="40" MaxWidth="300"></Button>
-            <Line Stroke="Black"  Stretch="Fill"  X1="1"></Line>        
+            <Line Stroke="Black"  Stretch="Fill"  X1="1"></Line>
+
 
         </StackPanel>
 
@@ -45,16 +50,16 @@
             <TextBlock Margin="0 0 0 80" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">Добавление студента в группу</TextBlock>
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Vertical" Margin="25 0 0 0">
-                    <TextBlock Text="Имя" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" RenderTransformOrigin="0.488,0.251" Height="25"/>
                     <TextBlock Text="Фамилия" FontSize="20" FontWeight="Bold" Margin="0 1 20 10"/>
+                    <TextBlock Text="Имя" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" RenderTransformOrigin="0.488,0.251" Height="25"/>
                     <TextBlock Text="Отчество" FontSize="20" FontWeight="Bold" Margin="0 0 20 10"/>
                     <TextBlock Text="Назначить старостой" FontSize="20" FontWeight="Bold" Margin="0 0 20 10"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical">
-                    <TextBox x:Name="NameTextBox" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"  MinWidth="210"  Margin="0 0 0 10" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
                     <TextBox x:Name="SurnameTextBox"  Text="{Binding Surname, UpdateSourceTrigger=PropertyChanged}" MinWidth="210" Margin="0 0 0 10" FontSize="16"   BorderThickness="1.4" BorderBrush="Black"></TextBox>
+                    <TextBox x:Name="NameTextBox" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"  MinWidth="210"  Margin="0 0 0 10" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
                     <TextBox x:Name="ThirdNameTextBox" Text="{Binding Thirdname, UpdateSourceTrigger=PropertyChanged}" MinWidth="210"  Margin="0 0 0 20" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
-                    <CheckBox   BorderThickness="1.4" BorderBrush="Black"></CheckBox>
+                    <CheckBox  IsChecked="{Binding IsCheckBoxPressed}"  BorderThickness="1.4" BorderBrush="Black"></CheckBox>
                 </StackPanel>
 
 
@@ -63,12 +68,23 @@
             <Line Stroke="Black"  Stretch="Fill"  X1="1"  Margin="0 0 0 25"></Line>
             <Button Content="Сохранить группу"  Command="{Binding SaveGroupCommand}" BorderThickness="1.4" BorderBrush="Black" MinHeight="50" MaxWidth="400"></Button>
         </StackPanel>
-
-        <DataGrid FontSize="20"  IsReadOnly="True" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" ItemsSource="{Binding Students}" AutoGenerateColumns="False">
+        <Line  Stroke="Black" Grid.Column="1" Grid.Row="0" Stretch="Fill"  ></Line>
+       
+        <StackPanel Margin="10 0 0 0 " Orientation="Vertical" Grid.Row="0" Grid.Column="1">
+            
+            <TextBlock  Text="{Binding Speciality, UpdateSourceTrigger=PropertyChanged, StringFormat=Специальность:{0}}"    FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
+            <TextBlock  Text="{Binding Semestr, UpdateSourceTrigger=PropertyChanged, StringFormat=Семестр: {0}}"    FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
+            <TextBlock  Text="{Binding GroupNumber, UpdateSourceTrigger=PropertyChanged, StringFormat=Номер группы: {0}}"    FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
+            <TextBlock  Text="Староста:" FontSize="20" FontWeight="Bold" Margin="0 1 20 10"></TextBlock>
+        </StackPanel>
+        
+        
+        <Line HorizontalAlignment="Left" X1="0" Y1="1" Stroke="Black" Grid.Column="1" Grid.Row="0" Stretch="Fill"  ></Line>
+        <DataGrid  FontSize="20"  IsReadOnly="True" Grid.Column="1"  ItemsSource="{Binding Students}" AutoGenerateColumns="False" Margin="0,150,0,-0.4" Grid.RowSpan="2">
             <DataGrid.Columns>
-                <DataGridTextColumn  Binding="{Binding Name}" Header="Имя"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding Surname}"  Header="Фамилия"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding Thirdname}" Header="Отчество"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Binding="{Binding Surname}"  Header="Фамилия"></DataGridTextColumn>
+                <DataGridTextColumn  Width="*" Binding="{Binding Name}" Header="Имя"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Binding="{Binding Thirdname}" Header="Отчество"></DataGridTextColumn>
             </DataGrid.Columns>
 
         </DataGrid>

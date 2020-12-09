@@ -17,13 +17,22 @@ namespace WPFCourseWork.ViewModels
         private string speciality;
         private int? groupNumber;
         private int? semestr;
+        private string tempSpeciality;
+        private int? tempGroupNumber;
+        private int? tempSemestr;
+        private bool isCheckBoxPressed;
         private string name;
         private string surname;
         private string thirdname;
         private StudentGroup studentGroup;
         private StudentGroupsDataBase _studentGroupsDataBase;
         private IMainWindowsCodeBehind _MainCodeBehind;
+        private Student headOfTheGroup;
 
+        public string TempSpeciality { get => tempSpeciality; set => Set(ref tempSpeciality, value); }
+
+        public int? TempGroupNumber { get => tempGroupNumber; set => Set(ref tempGroupNumber, value); }
+        public int? TempSemestr { get => tempSemestr; set => Set(ref tempSemestr, value); }
         public string Name { get => name; set => Set(ref name, value); }
         public string Surname { get => surname; set => Set(ref surname, value); }
         public string Thirdname { get => thirdname; set => Set(ref thirdname, value); }
@@ -33,6 +42,9 @@ namespace WPFCourseWork.ViewModels
 
         public int? Semestr { get => semestr; set => Set(ref semestr, value); }
 
+        public bool IsCheckBoxPressed { get => isCheckBoxPressed; set => Set(ref isCheckBoxPressed, value); }
+        
+        public Student HeadOfTheGroup { get => headOfTheGroup; set => Set(ref headOfTheGroup, value); }
         public ObservableCollection<Student> Students { get; set; }
         public StudentGroup StudentGroupProperty { get; }
 
@@ -41,12 +53,26 @@ namespace WPFCourseWork.ViewModels
         #region SavePropGroupCommand
         private LambdaCommand savePropGroupCommand;
 
-        private bool CanSavePropGroupCommandExecute(object p) => true;
+        private bool CanSavePropGroupCommandExecute(object p)
+        {
+            if (TempGroupNumber == null || string.IsNullOrEmpty(TempSpeciality) || TempSemestr == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         private void OnSavePropGroupCommandExecuted(object p)
         {
-            StudentGroupProperty.GroupNumber = GroupNumber;
-            StudentGroupProperty.Speciality = Speciality;
-            StudentGroupProperty.Semestr = Semestr;
+            GroupNumber = TempGroupNumber;
+            Speciality = TempSpeciality;
+            Semestr = TempSemestr;
+            StudentGroupProperty.GroupNumber = TempGroupNumber;
+            StudentGroupProperty.Speciality = TempSpeciality;
+            StudentGroupProperty.Semestr = TempSemestr;
+            
             ClearGpoupTextBoxes();
         }
         public LambdaCommand SavePropGroupCommand
@@ -60,15 +86,31 @@ namespace WPFCourseWork.ViewModels
         #endregion
         #region add student command
         private LambdaCommand addStudentCommand;
-        private bool CanAddStudentCommandExecute(object p) => true;
-        private void OnAddStudentCommandExecuted(object p)
-        {
+        private bool CanAddStudentCommandExecute(object p) {
+
             if (!(string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Thirdname)))
             {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+        }
+        private void OnAddStudentCommandExecuted(object p)
+        {
+            
                 Student student = new Student(Name, Surname, Thirdname);
                 Students.Insert(0, student);
-                ClearStudentTextBoxes();
+            if (IsCheckBoxPressed == true)
+            {
+                HeadOfTheGroup =student;
+                StudentGroupProperty.HeadOfTheGroup = HeadOfTheGroup;
+                IsCheckBoxPressed = false;
             }
+            ClearStudentTextBoxes();  
         }
         public LambdaCommand AddStudentCommand
         {
@@ -98,6 +140,23 @@ namespace WPFCourseWork.ViewModels
             }
         }
         #endregion
+        #region BackCommand
+        private LambdaCommand backCommand;
+
+        private void OnBackCommandExecute(object p)
+        {
+            _MainCodeBehind.LoadView(ViewType.MainMenu);
+        }
+        private bool CanBackCommandExecuted(object p) => true;
+        public LambdaCommand BackCommand
+        {
+            get
+            {
+                return backCommand = new LambdaCommand(OnBackCommandExecute, CanBackCommandExecuted);
+            }
+        }
+        #endregion
+
 
 
 
@@ -113,6 +172,9 @@ namespace WPFCourseWork.ViewModels
         
 
         }
+
+
+        #region Clear Functions
         private void ClearStudentTextBoxes()
         {
             Name = string.Empty;
@@ -122,9 +184,10 @@ namespace WPFCourseWork.ViewModels
         }
         private void ClearGpoupTextBoxes()
         {
-            Speciality = String.Empty;
-            GroupNumber = null;
-            Semestr = null;
+            
+            TempSpeciality = String.Empty;
+            TempGroupNumber = null;
+            TempSemestr = null;
 
         }
         private void ClearProperties()
@@ -138,5 +201,6 @@ namespace WPFCourseWork.ViewModels
             studentGroup=new StudentGroup();
             Students = new ObservableCollection<Student>();
     }
+        #endregion
     }
 }

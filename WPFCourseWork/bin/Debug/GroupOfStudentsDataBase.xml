@@ -1,21 +1,25 @@
 <?xml version="1.0"?>
 <ArrayOfStudentGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <StudentGroup>
-    <Students />
-    <Speciality>ПОИТ</Speciality>
-    <GroupNumber>192</GroupNumber>
-    <Semestr>4</Semestr>
-  </StudentGroup>
-  <StudentGroup>
     <Students>
       <Student>
-        <Name>ПВФЫЫПВЯП</Name>
-        <Surname>ЫВПЯЫП</Surname>
-        <Thirdname>ВПЯЫПВ</Thirdname>
+        <Name>Диана</Name>
+        <Surname>Хломко</Surname>
+        <Thirdname>Олеговна</Thirdname>
+      </Student>
+      <Student>
+        <Name>Виталий</Name>
+        <Surname>Хилевский</Surname>
+        <Thirdname>Андреевич</Thirdname>
       </Student>
     </Students>
-    <Speciality>ВЯЫПЯЫП</Speciality>
-    <GroupNumber>4</GroupNumber>
+    <HeadOfTheGroup>
+      <Name>Виталий</Name>
+      <Surname>Хилевский</Surname>
+      <Thirdname>Андреевич</Thirdname>
+    </HeadOfTheGroup>
+    <Speciality>ПОИТ</Speciality>
+    <GroupNumber>191</GroupNumber>
     <Semestr>3</Semestr>
   </StudentGroup>
 </ArrayOfStudentGroup>
