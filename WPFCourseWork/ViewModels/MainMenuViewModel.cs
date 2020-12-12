@@ -8,7 +8,7 @@ using WPFCourseWork.Commands;
 
 namespace WPFCourseWork.ViewModels
 {
-    class MainMenuViewModel:ViewModel
+   internal class MainMenuViewModel:ViewModel
     {
 
         private IMainWindowsCodeBehind CodeBehind { get; set; }

@@ -67,6 +67,7 @@
     <Compile Include="Models\Persons\UniversityPerson.cs" />
     <Compile Include="Serializer.cs" />
     <Compile Include="ViewModels\CreateGroupViewModel.cs" />
+    <Compile Include="ViewModels\LoginGroupViewModel.cs" />
     <Compile Include="ViewModels\MainMenuViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />

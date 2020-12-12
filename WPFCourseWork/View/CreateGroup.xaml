@@ -3,10 +3,10 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WPFCourseWork.View"
+      xmlns:vm="clr-namespace:WPFCourseWork.ViewModels"
+      xmlns:local="clr-namespace:WPFCourseWork.ViewModels"
       mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800" >
-
     <Grid ShowGridLines="false">
         <Grid.RowDefinitions>
             <RowDefinition Height="190*"></RowDefinition>
@@ -25,7 +25,7 @@
             <StackPanel Orientation="Horizontal">
 
                 <StackPanel Orientation="vertical" Margin="25 0 0 0">
-                    <TextBlock Text="Специальность" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" RenderTransformOrigin="0.488,0.251" Height="25"/>
+                    <TextBlock Text="Специальность" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" />
                     <TextBlock Text="Cеместр" FontSize="20" FontWeight="Bold" Margin="0 1 20 10"/>
                     <TextBlock Text="Номер группы" FontSize="20" FontWeight="Bold" Margin="0 0 20 0"/>
 
@@ -51,7 +51,7 @@
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Vertical" Margin="25 0 0 0">
                     <TextBlock Text="Фамилия" FontSize="20" FontWeight="Bold" Margin="0 1 20 10"/>
-                    <TextBlock Text="Имя" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" RenderTransformOrigin="0.488,0.251" Height="25"/>
+                    <TextBlock Text="Имя" FontSize="20" FontWeight="Bold" Margin="0 -2 20 8" Height="25"/>
                     <TextBlock Text="Отчество" FontSize="20" FontWeight="Bold" Margin="0 0 20 10"/>
                     <TextBlock Text="Назначить старостой" FontSize="20" FontWeight="Bold" Margin="0 0 20 10"/>
                 </StackPanel>
@@ -59,7 +59,7 @@
                     <TextBox x:Name="SurnameTextBox"  Text="{Binding Surname, UpdateSourceTrigger=PropertyChanged}" MinWidth="210" Margin="0 0 0 10" FontSize="16"   BorderThickness="1.4" BorderBrush="Black"></TextBox>
                     <TextBox x:Name="NameTextBox" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"  MinWidth="210"  Margin="0 0 0 10" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
                     <TextBox x:Name="ThirdNameTextBox" Text="{Binding Thirdname, UpdateSourceTrigger=PropertyChanged}" MinWidth="210"  Margin="0 0 0 20" FontSize="16"  BorderThickness="1.4" BorderBrush="Black"></TextBox>
-                    <CheckBox  IsChecked="{Binding IsCheckBoxPressed}"  BorderThickness="1.4" BorderBrush="Black"></CheckBox>
+                    <CheckBox  IsEnabled="{Binding IsCheckBoxEnabled}" IsChecked="{Binding IsCheckBoxPressed}"  BorderThickness="1.4" BorderBrush="Black"></CheckBox>
                 </StackPanel>
 
 

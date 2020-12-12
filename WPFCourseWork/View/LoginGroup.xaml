@@ -8,6 +8,20 @@
       d:DesignHeight="450" d:DesignWidth="800">
 
     <Grid>
-        <TextBlock FontSize="100">tewagagasga</TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"></RowDefinition>
+            <RowDefinition Height="144*"></RowDefinition>
+            <RowDefinition Height="47*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Left" Width="70">
+            <Button Content="Назад" Margin="0 20 0 0" Command="{Binding BackCommand}" BorderThickness="1.4" BorderBrush="Black"  MinHeight="35" MinWidth="70"  ></Button>
+        </StackPanel>
+        <ListView Grid.Row="1" ItemsSource="{Binding StudentGroups}" SelectedItem="{Binding SelectedStudentGroup}" FontSize="30" HorizontalAlignment="Center">
+            
+        </ListView>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"  Grid.Row="2">
+            <Button Content="Удалить" Command="{Binding DeleteGroupCommand}" CommandParameter="{Binding SelectedStudentGroup}" BorderThickness="1.4" BorderBrush="Black"  Margin="0 0 30 0" MaxHeight="60" MinWidth="200"></Button>
+            <Button Content="Войти"   Command="{Binding LoginGroupCommand}"  CommandParameter="{Binding SelectedStudentGroup}" BorderThickness="1.4" BorderBrush="Black"  Margin="30 0 0 0" MaxHeight="60" MinWidth="200"></Button>
+        </StackPanel>
     </Grid>
-    </UserControl>
+</UserControl>

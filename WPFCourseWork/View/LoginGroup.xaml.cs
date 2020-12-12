@@ -26,5 +26,7 @@ namespace WPFCourseWork.View
         {
             InitializeComponent();
         }
+
+       
     }
 }

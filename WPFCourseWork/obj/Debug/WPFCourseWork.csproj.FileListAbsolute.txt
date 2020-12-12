@@ -1,4 +1,3 @@
-C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\WPFCourseWork.csprojAssemblyReference.cache
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\App.g.cs
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\WPFCourseWork_MarkupCompile.cache
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\WPFCourseWork_MarkupCompile.lref
@@ -19,3 +18,4 @@ C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\Vie
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\View\MainMenu.baml
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\View\LoginGroup.g.cs
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\View\LoginGroup.baml
+C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\WPFCourseWork.csprojAssemblyReference.cache

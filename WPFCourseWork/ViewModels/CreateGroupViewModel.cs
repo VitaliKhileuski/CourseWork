@@ -11,7 +11,7 @@ using WPFCourseWork.Models.Persons;
 
 namespace WPFCourseWork.ViewModels
 {
-    class CreateGroupViewModel : ViewModel
+   internal class CreateGroupViewModel : ViewModel
     {
         #region fields and properties
         private string speciality;
@@ -21,6 +21,7 @@ namespace WPFCourseWork.ViewModels
         private int? tempGroupNumber;
         private int? tempSemestr;
         private bool isCheckBoxPressed;
+        private bool isCheckBoxEnabled=true;
         private string name;
         private string surname;
         private string thirdname;
@@ -43,6 +44,7 @@ namespace WPFCourseWork.ViewModels
         public int? Semestr { get => semestr; set => Set(ref semestr, value); }
 
         public bool IsCheckBoxPressed { get => isCheckBoxPressed; set => Set(ref isCheckBoxPressed, value); }
+        public bool IsCheckBoxEnabled { get => isCheckBoxEnabled; set => Set(ref isCheckBoxEnabled, value); }
         
         public Student HeadOfTheGroup { get => headOfTheGroup; set => Set(ref headOfTheGroup, value); }
         public ObservableCollection<Student> Students { get; set; }
@@ -109,6 +111,7 @@ namespace WPFCourseWork.ViewModels
                 HeadOfTheGroup =student;
                 StudentGroupProperty.HeadOfTheGroup = HeadOfTheGroup;
                 IsCheckBoxPressed = false;
+                IsCheckBoxEnabled = false;
             }
             ClearStudentTextBoxes();  
         }
@@ -171,6 +174,10 @@ namespace WPFCourseWork.ViewModels
 
 
 
+        public CreateGroupViewModel()
+        {
+    
+        }
         public CreateGroupViewModel(IMainWindowsCodeBehind codeBehind,StudentGroupsDataBase data)
         {
             if (codeBehind == null) throw new ArgumentNullException(nameof(codeBehind));
@@ -183,6 +190,7 @@ namespace WPFCourseWork.ViewModels
         
 
         }
+      
 
 
         #region Clear Functions

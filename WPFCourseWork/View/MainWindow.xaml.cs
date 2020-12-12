@@ -78,7 +78,7 @@ public partial class MainWindow : Window, IMainWindowsCodeBehind
                     break;
                 case ViewType.LoginGroup:
                     LoginGroup LoginGroupView = new LoginGroup();
-                    CreateGroupViewModel LoginGroupViewModel = new CreateGroupViewModel(this,groupsDataBase);
+                    LoginGroupViewModel LoginGroupViewModel = new LoginGroupViewModel(this,groupsDataBase);
                     LoginGroupView.DataContext = LoginGroupViewModel;
                     this.Page.Content = LoginGroupView;
                     break;

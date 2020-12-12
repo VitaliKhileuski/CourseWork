@@ -48,10 +48,13 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
             return Students.Count;
         }
 
-       
+        public override string ToString()
+        {
+            return $"{Speciality}-{GroupNumber}, {HeadOfTheGroup.Surname} {HeadOfTheGroup.Name}";
+        }
 
 
-        
+
 
 
 
