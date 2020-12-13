@@ -21,8 +21,9 @@ namespace WPFCourseWork.ViewModels
         private StudentGroup selectedStudentGroup;
 
         private StudentGroupsDataBase _studentGroupsDataBase;
+        private string visibility = "hidden";
 
-
+        public string Visibility { get => visibility; set => Set(ref visibility, value); }
         public StudentGroup SelectedStudentGroup { get => selectedStudentGroup; set => Set(ref selectedStudentGroup, value); }
         public StudentGroupsDataBase studentGroupsDataBase { get => _studentGroupsDataBase; set => Set(ref _studentGroupsDataBase, value); }
 
@@ -56,6 +57,10 @@ namespace WPFCourseWork.ViewModels
             studentGroups.Remove(group);
             _studentGroupsDataBase.studentGroups.Remove(group);
             Serializer.SerializeStudentsDataBase(_studentGroupsDataBase.studentGroups);
+            if (StudentGroups.Count == 0)
+            {
+                Visibility = "visible";
+            }
         }
 
         public LambdaCommand DeleteGroupCommand
@@ -86,6 +91,10 @@ namespace WPFCourseWork.ViewModels
             _MainCodeBehind = codeBehind;
             _studentGroupsDataBase = data;
             StudentGroups = _studentGroupsDataBase.studentGroups;
+            if (StudentGroups.Count == 0)
+            {
+                Visibility ="Visible";
+            }
             
 
 

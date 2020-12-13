@@ -28,7 +28,9 @@ namespace WPFCourseWork.ViewModels
     {
         MainMenu,
         CreateGroup,
-        LoginGroup
+        LoginGroup,
+        WeekList,
+        TimeTable
        
 }
 public partial class MainWindow : Window, IMainWindowsCodeBehind
@@ -81,6 +83,12 @@ public partial class MainWindow : Window, IMainWindowsCodeBehind
                     LoginGroupViewModel LoginGroupViewModel = new LoginGroupViewModel(this,groupsDataBase);
                     LoginGroupView.DataContext = LoginGroupViewModel;
                     this.Page.Content = LoginGroupView;
+                    break;
+                case ViewType.WeekList:
+                    WeekList WeekListView = new WeekList();
+                    WeekListViewModel WeekListViewModel = new WeekListViewModel(this);
+                    WeekListView.DataContext = WeekListViewModel;
+                    this.Page.Content = WeekListView;
                     break;
             }
 

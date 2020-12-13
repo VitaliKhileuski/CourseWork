@@ -19,7 +19,7 @@
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" >
             <StackPanel Orientation="Horizontal">
                 <Button Content="Назад"  Margin="10 0 200 70" Command="{Binding Path=BackCommand}" BorderThickness="1.4" BorderBrush="Black"  MaxHeight="35" MinWidth="70" ></Button>
-                <TextBlock Margin="0 0 0 80" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">Создание группы</TextBlock>
+                <TextBlock  Margin="0 0 0 80" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">Создание группы</TextBlock>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">

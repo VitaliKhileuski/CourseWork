@@ -70,9 +70,17 @@
     <Compile Include="ViewModels\LoginGroupViewModel.cs" />
     <Compile Include="ViewModels\MainMenuViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\TimeTableViewModel.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="ViewModels\WeekListViewModel.cs" />
     <Compile Include="View\CreateGroup.xaml.cs">
       <DependentUpon>CreateGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TimeTable.xaml.cs">
+      <DependentUpon>TimeTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WeekList.xaml.cs">
+      <DependentUpon>WeekList.xaml</DependentUpon>
     </Compile>
     <Page Include="View\LoginGroup.xaml">
       <SubType>Designer</SubType>
@@ -101,6 +109,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\CreateGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TimeTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WeekList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
