@@ -90,6 +90,13 @@ public partial class MainWindow : Window, IMainWindowsCodeBehind
                     WeekListView.DataContext = WeekListViewModel;
                     this.Page.Content = WeekListView;
                     break;
+                case ViewType.TimeTable:
+                    TimeTable TimeTableView = new TimeTable();
+                    TimeTableViewModel TimeTableViewModel = new TimeTableViewModel(this);
+                    TimeTableView.DataContext = TimeTableViewModel;
+                    this.Page.Content =TimeTableView;
+                    break;
+
             }
 
 

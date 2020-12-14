@@ -1,2 +1,20 @@
 <?xml version="1.0"?>
-<ArrayOfStudentGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfStudentGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StudentGroup>
+    <Students>
+      <Student>
+        <Name>Виталий</Name>
+        <Surname>Хилевский</Surname>
+        <Thirdname>Андреевич</Thirdname>
+      </Student>
+    </Students>
+    <HeadOfTheGroup>
+      <Name>Виталий</Name>
+      <Surname>Хилевский</Surname>
+      <Thirdname>Андреевич</Thirdname>
+    </HeadOfTheGroup>
+    <Speciality>ПОИТ</Speciality>
+    <GroupNumber>191</GroupNumber>
+    <Semestr>3</Semestr>
+  </StudentGroup>
+</ArrayOfStudentGroup>

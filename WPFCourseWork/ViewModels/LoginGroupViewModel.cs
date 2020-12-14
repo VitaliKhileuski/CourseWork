@@ -76,6 +76,7 @@ namespace WPFCourseWork.ViewModels
         private void OnLoginGroupCommandExecuted(object p)
         {
            Serializer.SerializeStudentsDataBase(_studentGroupsDataBase.studentGroups);
+            _MainCodeBehind.LoadView(ViewType.WeekList);
         }
         public LambdaCommand LoginGroupCommand
         {
