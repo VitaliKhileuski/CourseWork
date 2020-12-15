@@ -4,20 +4,23 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 using WPFCourseWork.Models.ElementsOfUniversity;
 
 namespace WPFCourseWork.Data
 {
-    public class StudentGroupsDataBase
+
+    [Serializable]
+    [XmlInclude(typeof(Week))]
+    public  class WeeksDataBase
     {
-        public ObservableCollection<StudentGroup> studentGroups;
+        public StudentGroup StudentGroup;
+        public ObservableCollection<Week> Weeks;
 
 
 
-        public StudentGroupsDataBase()
-        {
 
-            studentGroups=Serializer.DeserializeStudentsDataBase();
-        }
+
+        
     }
 }

@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" >
             <Button Content="Назад" Margin="20 0 0 0" Command="{Binding BackCommand}" BorderThickness="1.4" BorderBrush="Black"  MaxHeight="35" MinWidth="70"></Button>
-            <TextBlock Visibility="{Binding Visibility}" HorizontalAlignment="Center" Margin="380 40 0 0" Text="Группы отсутствуют, пожалуйста, Создайте группу." FontSize="25" FontWeight="Bold"></TextBlock>
+            <TextBlock Visibility="{Binding Visibility}" HorizontalAlignment="Center" Margin="380 40 0 0" Text="Группа отсутствует, пожалуйста, Создайте группу." FontSize="25" FontWeight="Bold"></TextBlock>
         </StackPanel>
         <ListView MinWidth="500"   SelectionMode="Extended" Padding="20 0 20 0" Grid.Row="1" ItemsSource="{Binding StudentGroups}" SelectedItem="{Binding SelectedStudentGroup}" FontSize="30" HorizontalAlignment="Center">
             

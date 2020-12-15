@@ -14,20 +14,20 @@ namespace WPFCourseWork.ViewModels
     {
         private IMainWindowsCodeBehind _MainCodeBehind;
 
+        
 
-
-        private ObservableCollection<StudentGroup> studentGroups;
+        private StudentGroup studentGroup;
 
         private StudentGroup selectedStudentGroup;
 
-        private StudentGroupsDataBase _studentGroupsDataBase;
+        private WeeksDataBase weeksDataBase;
         private string visibility = "hidden";
 
         public string Visibility { get => visibility; set => Set(ref visibility, value); }
         public StudentGroup SelectedStudentGroup { get => selectedStudentGroup; set => Set(ref selectedStudentGroup, value); }
-        public StudentGroupsDataBase studentGroupsDataBase { get => _studentGroupsDataBase; set => Set(ref _studentGroupsDataBase, value); }
 
-        public ObservableCollection<StudentGroup> StudentGroups { get => studentGroups; set => Set(ref studentGroups, value); }
+        public ObservableCollection<StudentGroup> StudentGroups { get; }
+        public StudentGroup StudentGroup { get => studentGroup; set => Set(ref studentGroup, value); }
         #region Back command
         private LambdaCommand backCommand;
         private bool CanBackCommandExecuted(object p) => true;
@@ -46,7 +46,7 @@ namespace WPFCourseWork.ViewModels
         }
         #endregion
         private LambdaCommand deleteGroupCommand;
-        private bool CanDeleteGroupCommandExecute(object p) => p is StudentGroup && StudentGroups.Contains(p);
+        private bool CanDeleteGroupCommandExecute(object p) => p is StudentGroup;
 
         private void OnDeleteGroupCommandExecuted(object p)
         {
@@ -54,10 +54,10 @@ namespace WPFCourseWork.ViewModels
             {
                 return;
             }
-            studentGroups.Remove(group);
-            _studentGroupsDataBase.studentGroups.Remove(group);
-            Serializer.SerializeStudentsDataBase(_studentGroupsDataBase.studentGroups);
-            if (StudentGroups.Count == 0)
+            StudentGroup=null;
+            weeksDataBase.StudentGroup=null;
+            Serializer.SerializeWeeksDataBase(weeksDataBase);
+            if (StudentGroup==null)
             {
                 Visibility = "visible";
             }
@@ -71,11 +71,11 @@ namespace WPFCourseWork.ViewModels
             }
         }
         private LambdaCommand loginGroupCommand;
-        private bool CanLoginGroupCommandExecute(object p) => p is StudentGroup && StudentGroups.Count != 0;
+        private bool CanLoginGroupCommandExecute(object p) => p is StudentGroup && StudentGroup !=null;
 
         private void OnLoginGroupCommandExecuted(object p)
         {
-           Serializer.SerializeStudentsDataBase(_studentGroupsDataBase.studentGroups);
+           Serializer.SerializeWeeksDataBase(weeksDataBase);
             _MainCodeBehind.LoadView(ViewType.WeekList);
         }
         public LambdaCommand LoginGroupCommand
@@ -85,14 +85,16 @@ namespace WPFCourseWork.ViewModels
                 return loginGroupCommand = new LambdaCommand(OnLoginGroupCommandExecuted, CanLoginGroupCommandExecute);
             }
         }
-        public LoginGroupViewModel(IMainWindowsCodeBehind codeBehind, StudentGroupsDataBase data)
+        public LoginGroupViewModel(IMainWindowsCodeBehind codeBehind,WeeksDataBase data)
         {
             if (codeBehind == null) throw new ArgumentNullException(nameof(codeBehind));
 
             _MainCodeBehind = codeBehind;
-            _studentGroupsDataBase = data;
-            StudentGroups = _studentGroupsDataBase.studentGroups;
-            if (StudentGroups.Count == 0)
+            StudentGroups = new ObservableCollection<StudentGroup>();
+            weeksDataBase = data;
+            StudentGroup=weeksDataBase.StudentGroup;
+            StudentGroups.Add(StudentGroup);
+            if (StudentGroup ==null)
             {
                 Visibility ="Visible";
             }

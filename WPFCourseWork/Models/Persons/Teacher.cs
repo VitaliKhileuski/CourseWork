@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPFCourseWork.Models.Persons
 {
-    class Teacher : UniversityPerson
+   public  class Teacher : UniversityPerson
     {
 
 

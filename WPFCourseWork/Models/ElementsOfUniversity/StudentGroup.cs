@@ -28,6 +28,8 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
 
         public int? Semestr { get { return semestr; } set { semestr = value;  } }
 
+        
+
 
         public StudentGroup(string speciality, ObservableCollection<Student> students, Student headOfTheGroup,int groupNumber,int semestr)
         {

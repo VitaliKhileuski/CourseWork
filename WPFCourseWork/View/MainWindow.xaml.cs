@@ -37,22 +37,28 @@ public partial class MainWindow : Window, IMainWindowsCodeBehind
     {
 
 
-        public StudentGroupsDataBase groupsDataBase=new StudentGroupsDataBase();
+        public DisciplinesDataBase disciplinesDataBase = new DisciplinesDataBase();
+        public WeeksDataBase weeksDataBase=Serializer.DeserializeWeeksDataBase();
+
+
          
         public MainWindow()
         {
-            
+
+         
             InitializeComponent();
             this.Loaded += MainWindow_Loaded;
         }
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
             //data
             //загрузка вьюмодел для кнопок меню
-            MainWindowViewModel viewModel = new MainWindowViewModel();
-            //даем доступ к этому кодбихайнд
-            viewModel.CodeBehind = this;
+            MainWindowViewModel viewModel = new MainWindowViewModel
+            {
+                //даем доступ к этому кодбихайнд
+                CodeBehind = this
+            };
             //делаем эту вьюмодел контекстом данных
             this.DataContext = viewModel;
 
@@ -74,19 +80,19 @@ public partial class MainWindow : Window, IMainWindowsCodeBehind
                     break;
                 case ViewType.CreateGroup:
                     CreateGroup CreateGroupView = new CreateGroup();
-                    CreateGroupViewModel CreateGroupViewModel = new CreateGroupViewModel(this,groupsDataBase);
+                    CreateGroupViewModel CreateGroupViewModel = new CreateGroupViewModel(this,weeksDataBase);
                     CreateGroupView.DataContext =CreateGroupViewModel;
                     this.Page.Content =CreateGroupView;
                     break;
                 case ViewType.LoginGroup:
                     LoginGroup LoginGroupView = new LoginGroup();
-                    LoginGroupViewModel LoginGroupViewModel = new LoginGroupViewModel(this,groupsDataBase);
+                    LoginGroupViewModel LoginGroupViewModel = new LoginGroupViewModel(this,weeksDataBase);
                     LoginGroupView.DataContext = LoginGroupViewModel;
                     this.Page.Content = LoginGroupView;
                     break;
                 case ViewType.WeekList:
                     WeekList WeekListView = new WeekList();
-                    WeekListViewModel WeekListViewModel = new WeekListViewModel(this);
+                    WeekListViewModel WeekListViewModel = new WeekListViewModel(this,weeksDataBase);
                     WeekListView.DataContext = WeekListViewModel;
                     this.Page.Content = WeekListView;
                     break;

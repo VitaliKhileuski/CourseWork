@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<ArrayOfSemestre xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Semestre>
+    <Disciplines>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Безопасность жизнедеятельности человека</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>ГрГУ имени Янки Купалы: миссия, история, структура</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Иностранный язык</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>История Беларуси в контексте европейской цивилизации</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Коррупция и её общественная опасность</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Математика</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Организация и функционирование компьютерных систем</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Основы алгоритмизации и программирования</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Практика программирования</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Русский язык как иностранный</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Физическая культура</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Физическая культура(легкая атлетика)</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Адаптивный курс математики</DisciplineP>
+      </Discipline>
+    </Disciplines>
+    <number>1</number>
+  </Semestre>
+  <Semestre>
+    <Disciplines>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Белорусский язык (культура речи)</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Иностранный язык</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Иностранный язык (профессиональное использование)</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Культура мировых цивилизаций</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Курсовая работа по дисциплине 'Основы алгоритмизации и программирования'</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Математика</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Основы алгоритмизации и программирования</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Права человека</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Прикладное программирование</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Физика</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Физическая культура</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Физическая культура(легкая атлетика)</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Языки программирования</DisciplineP>
+      </Discipline>
+    </Disciplines>
+    <number>2</number>
+  </Semestre>
+  <Semestre>
+    <Disciplines>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Военная подготовка (младшие командиры)</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Дискретная математика</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Иностранный язык (профессиональное использование)</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Компьютерные технологии в математике</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Курсовой проект по дисциплине 'Языки программирования'</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Математика</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Основы инновационного предпринимательства</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Основы компьютерных сетей</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Программирование сервисов для платформы Arduino</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Социология</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Экономическая теория</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Языки программирования</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Физическая культура</DisciplineP>
+      </Discipline>
+      <Discipline>
+        <Teacher>
+          <Name>Иван</Name>
+          <Surname>Иванов</Surname>
+          <Thirdname>Иванович</Thirdname>
+        </Teacher>
+        <DisciplineP>Физическая культура(легкая атлетика)</DisciplineP>
+      </Discipline>
+    </Disciplines>
+    <number>3</number>
+  </Semestre>
+</ArrayOfSemestre>

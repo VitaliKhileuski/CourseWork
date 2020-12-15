@@ -59,9 +59,14 @@
     </ApplicationDefinition>
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Commands\LambdaCommand.cs" />
-    <Compile Include="Data\StudentGroupsDataBase.cs" />
+    <Compile Include="Data\Discipline.cs" />
+    <Compile Include="Data\DisciplinesDataBase.cs" />
+    <Compile Include="Data\Semestre.cs" />
+    <Compile Include="Data\WeeksDataBase.cs" />
     <Compile Include="Models\ElementsOfUniversity\Lesson.cs" />
+    <Compile Include="Models\ElementsOfUniversity\StudentDay.cs" />
     <Compile Include="Models\ElementsOfUniversity\StudentGroup.cs" />
+    <Compile Include="Models\ElementsOfUniversity\Week.cs" />
     <Compile Include="Models\Persons\Student.cs" />
     <Compile Include="Models\Persons\Teacher.cs" />
     <Compile Include="Models\Persons\UniversityPerson.cs" />

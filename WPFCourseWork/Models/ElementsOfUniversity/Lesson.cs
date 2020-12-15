@@ -1,33 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml.Serialization;
 using WPFCourseWork.Models.Persons;
 
 namespace WPFCourseWork.Models.ElementsOfUniversity
 {
-    class Lesson
+    [Serializable]
+    [XmlInclude(typeof(Teacher))]
+    public  class Lesson
     {
         private  Teacher teacher;
-        private StudentGroup group;
-        private DateTime date;
-
         
 
+        private string discipline;
 
-        public Teacher TeacherP { get { return teacher; }set { teacher = value; } }
-        public StudentGroup Group { get { return group; } set { group = value; } }
-        public DateTime Date { get { return date; } set { date = value; } }
+        public Teacher Teacher { get { return teacher; } set { teacher = value; } }
+       
+        public string Discipline { get => discipline; set => discipline = value; }
 
-        public Lesson(Teacher teacher,StudentGroup studentGroup,DateTime dateTime)
+        public Lesson(Teacher teacher,string discipline)
         {
-            TeacherP = teacher;
-            Group = studentGroup;
-            Date = dateTime;
+            Teacher = teacher;
+            Discipline = discipline;
 
         }
         public Lesson()
         {
-
+            Teacher = new Teacher();
+            Discipline = null;
         }
     }
 

@@ -26,7 +26,7 @@ namespace WPFCourseWork.ViewModels
         private string surname;
         private string thirdname;
         private StudentGroup studentGroup;
-        private StudentGroupsDataBase _studentGroupsDataBase;
+        private WeeksDataBase weeksDataBase;
         private IMainWindowsCodeBehind _MainCodeBehind;
         private Student headOfTheGroup;
 
@@ -48,8 +48,11 @@ namespace WPFCourseWork.ViewModels
         
         public Student HeadOfTheGroup { get => headOfTheGroup; set => Set(ref headOfTheGroup, value); }
         public ObservableCollection<Student> Students { get; set; }
-        public StudentGroup StudentGroupProperty { get; }
 
+        public StudentGroup StudentGroup { get => studentGroup; set => Set(ref studentGroup, value); }
+        
+
+        
         #endregion
 
         #region SavePropGroupCommand
@@ -71,9 +74,9 @@ namespace WPFCourseWork.ViewModels
             GroupNumber = TempGroupNumber;
             Speciality = TempSpeciality;
             Semestr = TempSemestr;
-            StudentGroupProperty.GroupNumber = TempGroupNumber;
-            StudentGroupProperty.Speciality = TempSpeciality;
-            StudentGroupProperty.Semestr = TempSemestr;
+            StudentGroup.GroupNumber = TempGroupNumber;
+            StudentGroup.Speciality = TempSpeciality;
+            StudentGroup.Semestr = TempSemestr;
             
             ClearGpoupTextBoxes();
         }
@@ -109,7 +112,7 @@ namespace WPFCourseWork.ViewModels
             if (IsCheckBoxPressed == true)
             {
                 HeadOfTheGroup =student;
-                StudentGroupProperty.HeadOfTheGroup = HeadOfTheGroup;
+                StudentGroup.HeadOfTheGroup = HeadOfTheGroup;
                 IsCheckBoxPressed = false;
                 IsCheckBoxEnabled = false;
             }
@@ -128,9 +131,9 @@ namespace WPFCourseWork.ViewModels
 
         private void OnSaveGroupCommandExecute(object p)
         {
-            StudentGroupProperty.Students = Students;
-            _studentGroupsDataBase.studentGroups.Add(StudentGroupProperty);
-            Serializer.SerializeStudentsDataBase(_studentGroupsDataBase.studentGroups);
+            StudentGroup.Students = Students;
+            weeksDataBase.StudentGroup=StudentGroup;
+            Serializer.SerializeWeeksDataBase(weeksDataBase);
             ClearProperties();
             _MainCodeBehind.LoadView(ViewType.MainMenu);
         }
@@ -178,14 +181,14 @@ namespace WPFCourseWork.ViewModels
         {
     
         }
-        public CreateGroupViewModel(IMainWindowsCodeBehind codeBehind,StudentGroupsDataBase data)
+        public CreateGroupViewModel(IMainWindowsCodeBehind codeBehind,WeeksDataBase data)
         {
             if (codeBehind == null) throw new ArgumentNullException(nameof(codeBehind));
 
             _MainCodeBehind = codeBehind;
-            _studentGroupsDataBase = data;
+            weeksDataBase = data;
             Students = new ObservableCollection<Student>();
-            StudentGroupProperty = new StudentGroup();
+            StudentGroup = new StudentGroup();
            
         
 
