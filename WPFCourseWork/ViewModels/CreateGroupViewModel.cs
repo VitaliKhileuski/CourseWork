@@ -222,7 +222,7 @@ namespace WPFCourseWork.ViewModels
             Thirdname= string.Empty;
             studentGroup=new StudentGroup();
             Students = new ObservableCollection<Student>();
-    }
+        }
         #endregion
     }
 }

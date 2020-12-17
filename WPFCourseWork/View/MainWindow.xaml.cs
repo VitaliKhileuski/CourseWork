@@ -98,7 +98,7 @@ public partial class MainWindow : Window, IMainWindowsCodeBehind
                     break;
                 case ViewType.TimeTable:
                     TimeTable TimeTableView = new TimeTable();
-                    TimeTableViewModel TimeTableViewModel = new TimeTableViewModel(this);
+                    TimeTableViewModel TimeTableViewModel = new TimeTableViewModel(this,weeksDataBase,disciplinesDataBase,TimeTableView);
                     TimeTableView.DataContext = TimeTableViewModel;
                     this.Page.Content =TimeTableView;
                     break;

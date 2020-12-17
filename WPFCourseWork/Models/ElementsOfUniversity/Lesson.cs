@@ -25,10 +25,19 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
             Discipline = discipline;
 
         }
+        public Lesson(Lesson lesson)
+        {
+            Teacher = lesson.Teacher;
+            Discipline = lesson.Discipline;
+        }
         public Lesson()
         {
             Teacher = new Teacher();
             Discipline = null;
+        }
+        public override string ToString()
+        {
+            return discipline;
         }
     }
 

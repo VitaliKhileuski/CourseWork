@@ -17,14 +17,26 @@ namespace WPFCourseWork.Data
         public Teacher Teacher { get => teacher; set => teacher = value; }
         public string DisciplineP { get => discipline; set => discipline = value; }
 
+
+
+        public Discipline()
+        {
+            Teacher = null;
+
+        }
         public Discipline(Teacher teacher,string discipline)
         {
             Teacher = teacher;
             DisciplineP = discipline;
         }
-        public Discipline()
+        public Discipline(Discipline discipline)
         {
-
+            this.DisciplineP = discipline.DisciplineP;
+            this.Teacher = discipline.Teacher;
+        }
+        public override string ToString()
+        {
+            return discipline;
         }
     }
 }

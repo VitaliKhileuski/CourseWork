@@ -16,6 +16,7 @@ namespace WPFCourseWork.Data
     {
         public StudentGroup StudentGroup;
         public ObservableCollection<Week> Weeks;
+        public Week SelectedWeek;
 
 
 

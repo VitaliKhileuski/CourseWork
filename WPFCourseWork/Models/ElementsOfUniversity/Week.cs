@@ -11,7 +11,8 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
     [Serializable]
     [XmlInclude(typeof(StudentDay))]
     public class Week
-    {
+    {   
+
         private DateTime startOfTheWeek;
         private DateTime endOfTheWeek;
         private List<StudentDay> studentDays;

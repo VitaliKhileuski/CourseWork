@@ -22,5 +22,10 @@ namespace WPFCourseWork.Data
             this.number = number;
             Disciplines = disciplines;
         }
+        public Semestre(Semestre semestre)
+        {
+            this.Disciplines = semestre.Disciplines;
+            this.number = semestre.number;
+        }
     }
 }

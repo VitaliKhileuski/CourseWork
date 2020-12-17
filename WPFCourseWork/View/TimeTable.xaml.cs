@@ -23,6 +23,10 @@ namespace WPFCourseWork.View
         public TimeTable()
         {
             InitializeComponent();
+           
         }
+
+
+        
     }
 }

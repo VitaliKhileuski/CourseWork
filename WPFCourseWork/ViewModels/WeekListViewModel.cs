@@ -22,13 +22,13 @@ namespace WPFCourseWork.ViewModels
         private WeeksDataBase weeksData;
         private ObservableCollection<Week> weeks;
 
-
+        public Lesson TempLesson { get; set; }
         public Week SelectedWeek { get => selectedWeek; set => Set(ref selectedWeek, value); }
 
         public ObservableCollection<Week> Weeks { get => weeks; set => Set(ref weeks, value); }
 
 
-        public WeeksDataBase WeeksData { get => weeksData; set => Set(ref weeksData, value); } 
+        
 
         public StudentGroup StudentGroup { get => studentGroup; set => Set(ref studentGroup, value); }
 
@@ -55,7 +55,10 @@ namespace WPFCourseWork.ViewModels
 
         private void OnChooseWeekCommandExecuted(object p)
         {
+            weeksData.SelectedWeek = SelectedWeek;
             _MainCodeBehind.LoadView(ViewType.TimeTable);
+            
+            
         }
         public LambdaCommand ChoosewWeekCommand{
 
@@ -65,17 +68,19 @@ namespace WPFCourseWork.ViewModels
             }
             }
         #endregion
+        
 
         public WeekListViewModel(IMainWindowsCodeBehind codeBehind ,WeeksDataBase weeksData) 
         {
             _MainCodeBehind = codeBehind;
             StudentGroup = weeksData.StudentGroup;
-            WeeksData = weeksData;
-            Weeks = WeeksData.Weeks;
-            Weeks.Insert(0, new Week(new DateTime(2020, 10, 28)));
+            this.weeksData = weeksData;
+            Weeks = weeksData.Weeks;
+            SetNewWeek(new DateTime(2020, 10, 28));
             CreateWeekList();
             Weeks=SortByDateLinq(Weeks);
             SelectedWeek = Weeks[0];
+            
         }
 
         public void CreateWeekList()

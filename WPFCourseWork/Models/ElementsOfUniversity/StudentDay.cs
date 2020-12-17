@@ -4,28 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using WPFCourseWork.Data;
 
 namespace WPFCourseWork.Models.ElementsOfUniversity
 {
     [Serializable]
     [XmlInclude(typeof(Lesson))]
-    public   class StudentDay
+    public class StudentDay
     {
+        private DayOfWeek dayOfWeek;
         private DateTime date;
-        private List<Lesson> lessons;
+        private List<Discipline> lessons;
 
-        public List<Lesson> Lessons { get => lessons; set => lessons = value; }
+        public List<Discipline> Lessons { get => lessons; set => lessons = value; }
         public DateTime Date { get => date; set => date = value; }
-
+        public DayOfWeek DayOfWeek{ get => dayOfWeek; set => dayOfWeek=value;}
 
         public StudentDay()
         {
-            Lessons = new List<Lesson>();
+            
+            Lessons = new List<Discipline>();
+           
         }
         public StudentDay(DateTime date)
         {
             Date = date;
-            Lessons = new List<Lesson>();
+            Lessons = new List<Discipline>();
+            for (int i = 0; i < 5; i++)
+            {
+                Lessons.Add(new Discipline());
+            }
+            DayOfWeek = date.DayOfWeek;
+        }
+        public override string ToString()
+        {
+            return $"{Date.Day}.{Date.Month}";
+            
         }
     }
 }
