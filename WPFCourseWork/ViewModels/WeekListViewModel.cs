@@ -76,7 +76,6 @@ namespace WPFCourseWork.ViewModels
             StudentGroup = weeksData.StudentGroup;
             this.weeksData = weeksData;
             Weeks = weeksData.Weeks;
-            SetNewWeek(new DateTime(2020, 10, 28));
             CreateWeekList();
             Weeks=SortByDateLinq(Weeks);
             SelectedWeek = Weeks[0];

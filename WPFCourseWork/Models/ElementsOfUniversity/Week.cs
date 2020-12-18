@@ -15,9 +15,9 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
 
         private DateTime startOfTheWeek;
         private DateTime endOfTheWeek;
-        private List<StudentDay> studentDays;
+        private ObservableCollection<StudentDay> studentDays;
 
-        public List<StudentDay> StudentDays { get => studentDays; set => studentDays = value; }
+        public ObservableCollection<StudentDay> StudentDays { get => studentDays; set => studentDays = value; }
         public DateTime StartOfTheWeek { get => startOfTheWeek;
             set
             {
@@ -31,13 +31,13 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
 
         public Week()
         {
-            StudentDays = new List<StudentDay>();
+            StudentDays = new ObservableCollection<StudentDay>();
 
         }
         public Week(DateTime startOfTheWeek)
         {
             StartOfTheWeek = startOfTheWeek;
-            StudentDays = new List<StudentDay>();
+            StudentDays = new ObservableCollection<StudentDay>();
             for(int i = 0; i < 7; i++)
             {
                 StudentDays.Add(new StudentDay(StartOfTheWeek.AddDays(i)));

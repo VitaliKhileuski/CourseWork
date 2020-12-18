@@ -1,0 +1,38 @@
+﻿<Window x:Class="WPFCourseWork.View.skips"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCourseWork.View"
+        mc:Ignorable="d"
+        Title="skips" Height="750" Width="1300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="564*"></RowDefinition>
+            <RowDefinition Height="157*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn   Width="0.4*">
+                    <DataGridTextColumn.Header >
+                        <TextBlock Text="Студенты" FontWeight="Bold" Margin="140 0 60 0" >
+                            
+                        </TextBlock>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridCheckBoxColumn  Width="0.118*">
+                    <DataGridCheckBoxColumn.Header>
+                        <TextBlock Text="Отсутсвует" FontWeight="Bold" Margin="15 0 0 0"></TextBlock>
+                    </DataGridCheckBoxColumn.Header>
+                </DataGridCheckBoxColumn>
+                <DataGridTextColumn Width="*">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="Статус пропуска,причина" Margin="300 0 0  0"  FontWeight="Bold"></TextBlock>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Row="1"  Content="Сохранить" MaxHeight="70" BorderThickness="1.4" BorderBrush="black"  MinWidth="340" MaxWidth="350" FontSize="19"></Button>
+    </Grid>
+</Window>

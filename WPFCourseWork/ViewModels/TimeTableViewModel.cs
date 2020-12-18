@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace WPFCourseWork.ViewModels
         private WeeksDataBase weeksData;
         private IMainWindowsCodeBehind _MainCodeBehind;
         private Week currentWeek;
-        private List<StudentDay> studentDays; 
+        private ObservableCollection<StudentDay> studentDays; 
         private List<Discipline> disciplines;
         private DisciplinesDataBase allDisciplines;
         private Discipline selectedDiscipline;
@@ -29,7 +31,7 @@ namespace WPFCourseWork.ViewModels
         public Discipline SelectedDiscipline { get => selectedDiscipline; set => Set(ref selectedDiscipline, value); }
         public List<Discipline> Disciplines { get => disciplines; set => Set(ref disciplines, value); }
         public Week CurrentWeek { get => currentWeek; set => Set(ref currentWeek, value); }
-        public List<StudentDay> StudentDays { get => studentDays; set => Set(ref studentDays,value); }
+        public ObservableCollection<StudentDay> StudentDays { get => studentDays; set => Set(ref studentDays,value); }
 
         #region BackCommand
         private LambdaCommand backCommand;
@@ -49,18 +51,38 @@ namespace WPFCourseWork.ViewModels
         #endregion
 
 
-        #region cell command
-        private LambdaCommand cellCommand;
-        private bool CanCellCommandExecute(object p) => true;
-        private void OnCellCommandExecuted(object p)
+        #region Set Discipline Command
+        private LambdaCommand setDisciplineCommand;
+        private bool CanSetDisciplineCommandExecute(object p) => true;
+        private void OnSetDisciplineCommandExecuted(object p)
         {
-            SetTempCell();
+            SetDiscipline();
+            
         }
-        public LambdaCommand CellCommand
+        public LambdaCommand SetDisciplineCommand
         {
             get
             {
-                return cellCommand = new LambdaCommand(OnCellCommandExecuted, CanCellCommandExecute);
+                return setDisciplineCommand = new LambdaCommand(OnSetDisciplineCommandExecuted, CanSetDisciplineCommandExecute);
+            }
+        }
+        #endregion
+
+
+        #region fill skips
+        private LambdaCommand fillSkipsCommand;
+
+        private bool CanFillSkipsCommandExecute(object p) => true;
+        private void OnFillSkipsCommandExecuted(object p)
+        {
+            skips SkipsWindow = new skips();
+            SkipsWindow.Show();
+        }
+        public LambdaCommand FillSkipsCommand
+        {
+            get
+            {
+                return fillSkipsCommand = new LambdaCommand(OnFillSkipsCommandExecuted, CanFillSkipsCommandExecute);
             }
         }
         #endregion
@@ -70,10 +92,10 @@ namespace WPFCourseWork.ViewModels
             weeksData = weeksDataBase;
             CurrentWeek = weeksData.SelectedWeek;
             StudentDays = CurrentWeek.StudentDays;
-            StudentDays[0].Lessons[0].DisciplineP = "sraka";
+            
             allDisciplines = disciplinesDataBase;
             Disciplines = SetDisciplines(weeksData.StudentGroup, allDisciplines).Disciplines;
-            TempLesson = new Lesson(null, "sraka");
+            
             timeTableView = view;
           
 
@@ -82,6 +104,7 @@ namespace WPFCourseWork.ViewModels
 
         private Semestre SetDisciplines(StudentGroup group, DisciplinesDataBase data)
         {
+
             Semestre temp = new Semestre();
             for (int i = 0; i < data.allDisciplines.Count; i++)
             {
@@ -95,9 +118,26 @@ namespace WPFCourseWork.ViewModels
         }
 
 
-        public void SetTempCell()
+        public void SetDiscipline()
         {
-            TempCell = (StudentDay)timeTableView.DataGrid.SelectedCells[0].Item;
+           
+            int res = timeTableView.DataGrid.SelectedCells[0].Column.DisplayIndex;
+            if (res == 0 || res == 1)
+            {
+                return;
+            }
+            TempCell =(StudentDay)timeTableView.DataGrid.SelectedCells[0].Item;
+           for(int i = 0; i < StudentDays.Count; i++)
+            {
+                if (TempCell.DayOfWeek == StudentDays[i].DayOfWeek)
+                {
+                    StudentDays[i].Lessons[res-2] = SelectedDiscipline;
+                    
+                    break;
+                }
+            }
+            timeTableView.DataGrid.ItemsSource = null;
+            timeTableView.DataGrid.ItemsSource = StudentDays;
         }
     }
 }

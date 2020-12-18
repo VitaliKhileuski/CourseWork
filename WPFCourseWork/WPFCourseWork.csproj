@@ -68,8 +68,10 @@
     <Compile Include="Data\Discipline.cs" />
     <Compile Include="Data\DisciplinesDataBase.cs" />
     <Compile Include="Data\Semestre.cs" />
+    <Compile Include="Data\Skips.cs" />
     <Compile Include="Data\WeeksDataBase.cs" />
     <Compile Include="Models\ElementsOfUniversity\Lesson.cs" />
+    <Compile Include="Models\ElementsOfUniversity\Skip.cs" />
     <Compile Include="Models\ElementsOfUniversity\StudentDay.cs" />
     <Compile Include="Models\ElementsOfUniversity\StudentGroup.cs" />
     <Compile Include="Models\ElementsOfUniversity\Week.cs" />
@@ -81,11 +83,15 @@
     <Compile Include="ViewModels\LoginGroupViewModel.cs" />
     <Compile Include="ViewModels\MainMenuViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\SkipsViewModel.cs" />
     <Compile Include="ViewModels\TimeTableViewModel.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
     <Compile Include="ViewModels\WeekListViewModel.cs" />
     <Compile Include="View\CreateGroup.xaml.cs">
       <DependentUpon>CreateGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\skips.xaml.cs">
+      <DependentUpon>skips.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\TimeTable.xaml.cs">
       <DependentUpon>TimeTable.xaml</DependentUpon>
@@ -120,6 +126,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\CreateGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\skips.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
