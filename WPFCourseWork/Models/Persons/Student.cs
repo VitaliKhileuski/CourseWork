@@ -19,6 +19,12 @@ namespace WPFCourseWork.Models.Persons
         {
 
         }
+        public Student(Student student)
+        {
+            Name = student.Name;
+            Surname = student.Surname;
+            Thirdname = student.Thirdname;
+        }
         //public void TransferToNextCourse()
         //{
         //    if ()
@@ -33,7 +39,7 @@ namespace WPFCourseWork.Models.Persons
 
         public override string ToString()
         {
-            return Surname + " " + Name + " " + Thirdname;
+            return Surname + " " + Name;
         }
     }
 }

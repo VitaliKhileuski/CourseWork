@@ -44,8 +44,8 @@ public partial class MainWindow : Window, IMainWindowsCodeBehind
          
         public MainWindow()
         {
+       
 
-         
             InitializeComponent();
             this.Loaded += MainWindow_Loaded;
         }

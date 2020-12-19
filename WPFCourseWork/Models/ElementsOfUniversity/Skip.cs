@@ -7,7 +7,7 @@ using WPFCourseWork.Models.Persons;
 
 namespace WPFCourseWork.Models.ElementsOfUniversity
 {
-    class Skip
+    public class Skip
     {
         private Student student;
         private bool isAbsent;

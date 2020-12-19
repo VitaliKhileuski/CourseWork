@@ -22,12 +22,12 @@ namespace WPFCourseWork.ViewModels
         private WeeksDataBase weeksData;
         private ObservableCollection<Week> weeks;
 
-        public Lesson TempLesson { get; set; }
+        private Discipline selectedDiscipline;
         public Week SelectedWeek { get => selectedWeek; set => Set(ref selectedWeek, value); }
 
         public ObservableCollection<Week> Weeks { get => weeks; set => Set(ref weeks, value); }
 
-
+        public Discipline SelectedDiscipline { get => selectedDiscipline; set => Set(ref selectedDiscipline, value); }
         
 
         public StudentGroup StudentGroup { get => studentGroup; set => Set(ref studentGroup, value); }
@@ -37,6 +37,7 @@ namespace WPFCourseWork.ViewModels
 
         private void OnBackCommandExecute(object p)
         {
+            
             _MainCodeBehind.LoadView(ViewType.LoginGroup);
         }
         private bool CanBackCommandExecuted(object p) => true;
@@ -78,6 +79,7 @@ namespace WPFCourseWork.ViewModels
             Weeks = weeksData.Weeks;
             CreateWeekList();
             Weeks=SortByDateLinq(Weeks);
+
             SelectedWeek = Weeks[0];
             
         }
@@ -94,7 +96,19 @@ namespace WPFCourseWork.ViewModels
             {
                 while (DateTime.Today.Subtract(Weeks[Weeks.Count-1].EndOfTheWeek).Days > 7)
                 {
-                    Weeks.Add(new Week(Weeks[Weeks.Count-1].EndOfTheWeek.AddDays(1)));
+                    Week week = new Week(Weeks[Weeks.Count - 1].EndOfTheWeek.AddDays(1));
+                    for (int i = 0; i < 7; i++)
+                    {
+                        for (int j = 0; j < 5; j++)
+                        {
+                            for (int z = 0; z < weeksData.StudentGroup.Students.Count; i++)
+                            {
+                                week.StudentDays[i].Lessons[j].Skips[z] = new Skip();
+                            }
+                        }
+                    }
+
+                    Weeks.Add(week);
                 }
             }
            
@@ -105,8 +119,19 @@ namespace WPFCourseWork.ViewModels
             {
                 temp = temp.AddDays(-1);
             }
+            
             Week week = new Week(temp);
-            Weeks.Add(week);
+            for(int i = 0; i < 7; i++)
+            {
+                for( int j = 0; j < 5; j++)
+                {
+                    for(int z = 0; z < weeksData.StudentGroup.Students.Count; z++)
+                    {
+                        week.StudentDays[i].Lessons[j].Skips.Add(new Skip());
+                    }
+                }
+            }
+                Weeks.Add(week);
             
         }
       

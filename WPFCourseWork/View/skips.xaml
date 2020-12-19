@@ -12,27 +12,34 @@
             <RowDefinition Height="157*"></RowDefinition>
             
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="0">
+        <DataGrid AutoGenerateColumns="False" Grid.Row="0" ItemsSource="{Binding Skips, UpdateSourceTrigger=PropertyChanged}" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn   Width="0.4*">
+                <DataGridTextColumn CanUserSort="False" Binding="{Binding Student,UpdateSourceTrigger=PropertyChanged}"  Width="0.4*">
                     <DataGridTextColumn.Header >
                         <TextBlock Text="Студенты" FontWeight="Bold" Margin="140 0 60 0" >
                             
                         </TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridCheckBoxColumn  Width="0.118*">
+                <DataGridCheckBoxColumn  Width="0.118*" Binding="{Binding IsAbsent, UpdateSourceTrigger=PropertyChanged}">
                     <DataGridCheckBoxColumn.Header>
                         <TextBlock Text="Отсутсвует" FontWeight="Bold" Margin="15 0 0 0"></TextBlock>
                     </DataGridCheckBoxColumn.Header>
                 </DataGridCheckBoxColumn>
-                <DataGridTextColumn Width="*">
+                <DataGridTextColumn Binding="{Binding Description}" Width="*">
                     <DataGridTextColumn.Header>
-                        <TextBlock Text="Статус пропуска,причина" Margin="300 0 0  0"  FontWeight="Bold"></TextBlock>
+                        <TextBlock Text="Статус пропуска,причина"  Margin="300 0 0  0"  FontWeight="Bold"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Grid.Row="1"  Content="Сохранить" MaxHeight="70" BorderThickness="1.4" BorderBrush="black"  MinWidth="340" MaxWidth="350" FontSize="19"></Button>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Margin=" 0 0 100 0">
+                <TextBlock Margin="20 20 0 0" FontSize="16" FontWeight="Bold" Text="{Binding StringFormat=Дисциплина: {0}, Path=Discipline}"></TextBlock>
+                <TextBlock Margin="20 20 0 20" FontSize="16" FontWeight="Bold" Text="{Binding StringFormat=Преподаватель: {0}, Path=Teacher}"></TextBlock>
+            </StackPanel>
+            <Button Grid.Row="1" Margin="0 0 0 50" Content="Сохранить"  Command="{Binding SaveSkipsCommand}" MaxHeight="70" BorderThickness="1.4" BorderBrush="black"  MinWidth="340" MaxWidth="350" FontSize="19"></Button>
+        </StackPanel>
+        
     </Grid>
 </Window>

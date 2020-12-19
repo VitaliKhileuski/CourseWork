@@ -9,7 +9,7 @@ using WPFCourseWork.Data;
 namespace WPFCourseWork.Models.ElementsOfUniversity
 {
     [Serializable]
-    [XmlInclude(typeof(Lesson))]
+    [XmlInclude(typeof(Discipline))]
     public class StudentDay
     {
         private DayOfWeek dayOfWeek;

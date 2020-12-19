@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using WPFCourseWork.Commands;
 using WPFCourseWork.Data;
 using WPFCourseWork.Models.ElementsOfUniversity;
+using WPFCourseWork.Models.Persons;
 
 namespace WPFCourseWork.ViewModels
 {
@@ -75,7 +76,9 @@ namespace WPFCourseWork.ViewModels
 
         private void OnLoginGroupCommandExecuted(object p)
         {
-           Serializer.SerializeWeeksDataBase(weeksDataBase);
+          
+            weeksDataBase.StudentGroup.Students= new ObservableCollection<Student>(weeksDataBase.StudentGroup.Students.OrderBy(x => x.Surname).ToList());
+            Serializer.SerializeWeeksDataBase(weeksDataBase);
             _MainCodeBehind.LoadView(ViewType.WeekList);
         }
         public LambdaCommand LoginGroupCommand
@@ -98,10 +101,6 @@ namespace WPFCourseWork.ViewModels
             {
                 Visibility ="Visible";
             }
-            
-
-
-
         }
     }
    

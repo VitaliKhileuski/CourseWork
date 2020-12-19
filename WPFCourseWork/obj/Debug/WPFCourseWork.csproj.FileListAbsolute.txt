@@ -27,6 +27,8 @@ C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\Sys
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\Microsoft.Expression.Interactions.xml
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\System.Windows.Interactivity.xml
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\WPFCourseWork.csproj.CopyComplete
-C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\WPFCourseWork.csprojAssemblyReference.cache
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\View\skips.g.cs
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\View\skips.baml
+C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\WPFCourseWork.csprojAssemblyReference.cache
+C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\Xceed.Document.NET.dll
+C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\Xceed.Words.NET.dll

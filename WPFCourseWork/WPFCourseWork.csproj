@@ -57,6 +57,12 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Document.NET, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocX.1.7.1\lib\net40\Xceed.Document.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Words.NET, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocX.1.7.1\lib\net40\Xceed.Words.NET.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -68,8 +74,8 @@
     <Compile Include="Data\Discipline.cs" />
     <Compile Include="Data\DisciplinesDataBase.cs" />
     <Compile Include="Data\Semestre.cs" />
-    <Compile Include="Data\Skips.cs" />
     <Compile Include="Data\WeeksDataBase.cs" />
+    <Compile Include="DocxTable.cs" />
     <Compile Include="Models\ElementsOfUniversity\Lesson.cs" />
     <Compile Include="Models\ElementsOfUniversity\Skip.cs" />
     <Compile Include="Models\ElementsOfUniversity\StudentDay.cs" />

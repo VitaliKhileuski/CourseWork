@@ -16,5 +16,9 @@ namespace WPFCourseWork.Models.Persons
         {
 
         }
+        public override string ToString()
+        {
+            return $"{Surname} {Name} {Thirdname}";
+        }
     }
 }

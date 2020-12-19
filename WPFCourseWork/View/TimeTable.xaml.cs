@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPFCourseWork.Models.ElementsOfUniversity;
 
 namespace WPFCourseWork.View
 {
@@ -23,10 +24,8 @@ namespace WPFCourseWork.View
         public TimeTable()
         {
             InitializeComponent();
-           
+            
+            var a = DataGrid.CurrentCell.Item.ToString(); 
         }
-
-
-        
     }
 }
