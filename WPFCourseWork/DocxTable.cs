@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using WPFCourseWork.Data;
 using WPFCourseWork.Models.ElementsOfUniversity;
 using WPFCourseWork.Models.Persons;
@@ -25,8 +26,16 @@ namespace WPFCourseWork
         }
         public void CreateTable()
         {
+
+
+            string temp = Getstring();
             string fileName = @"C:\test\exempleWord3.docx";
             var doc = DocX.Create(fileName);
+            doc.InsertParagraph($"Пропуски за неделю ({data.StudentGroup.Semestr} семестр)").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center;
+            doc.InsertParagraph(temp).Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center;
+
+
+
             int numberOfSkips = CalculateSkips();
             Table t = doc.AddTable(1 + numberOfSkips, 5);
             t.Alignment = Alignment.center;
@@ -38,6 +47,7 @@ namespace WPFCourseWork
         {
             int rowIndex = 0;
             int columnIndex = 0;
+
             
             DateTime dateOfSkip=new DateTime();
             Student student=null;
@@ -45,15 +55,17 @@ namespace WPFCourseWork
             Teacher teacher=null;
             string discipline="";
             const int numberOfHours = 2;
-            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("ФИО Студента");
+
+            
+            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("ФИО Студента").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center; 
             columnIndex++;
-            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("Дата пропуска");
+            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("Дата пропуска").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center; 
             columnIndex++;
-            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("Количество пропущенных часов");
+            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("Количество пропущенных часов").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center; 
             columnIndex++;
-            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("Название дисциплины, (преподаватель)");
+            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("Название дисциплины, (преподаватель)").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center; 
             columnIndex++;
-            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("ПРичина");
+            table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("Причина").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center; 
             columnIndex = 0;
             
             foreach(var studentDay in week.StudentDays)
@@ -72,15 +84,15 @@ namespace WPFCourseWork
                                 teacher = studentDay.Lessons[i].Teacher;
                                 discipline = studentDay.Lessons[i].DisciplineP;
                                 rowIndex++;
-                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append(student.ToString());
+                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append(student.ToString()).Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center;
                                 columnIndex++;
-                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append(dateOfSkip.ToString());
+                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append($"{dateOfSkip.Day}.{dateOfSkip.Month}").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center;
                                 columnIndex++;
-                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append(numberOfHours.ToString());
+                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append(numberOfHours.ToString()).Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center;
                                 columnIndex++;
-                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append($"{discipline}({teacher})");
+                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append($"{discipline}\n({teacher})").Font("TimesNewRoman").FontSize(12).Alignment = Alignment.center;
                                 columnIndex++;
-                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append(description);
+                                table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append(description).Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center; 
                                 columnIndex = 0;
                             }
                         }
@@ -116,6 +128,37 @@ namespace WPFCourseWork
             
             return n;
         }
+
+        private string Getstring()
+        {
+            
+            string[] months = new string[12]
+            {
+                "января",
+                "февраля",
+                "марта",
+                "апреля",
+                "мая",
+                "июня",
+                "июля",
+                "августа",
+                "сентября",
+                "октября",
+                "ноября",
+                "декабря",
+            };
+            string currentMonth = months[week.StartOfTheWeek.Month - 1];
+            
+
+            string temp =$"с {week.StartOfTheWeek.Day} по {week.EndOfTheWeek.Day} {currentMonth}";
+            
+
+
+
+
+            return temp;
+        }
+
 
     }
 }

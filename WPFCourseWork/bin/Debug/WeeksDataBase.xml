@@ -4422,7 +4422,8 @@
                     <Surname>Алфименков</Surname>
                     <Thirdname>Евгеньевич</Thirdname>
                   </Student>
-                  <IsAbsent>false</IsAbsent>
+                  <IsAbsent>true</IsAbsent>
+                  <Description>Уважительная (прогул)</Description>
                 </Skip>
                 <Skip>
                   <Student>
@@ -4462,7 +4463,8 @@
                     <Surname>Карасев</Surname>
                     <Thirdname>Александрович</Thirdname>
                   </Student>
-                  <IsAbsent>false</IsAbsent>
+                  <IsAbsent>true</IsAbsent>
+                  <Description>Уважительная (военный факультет)</Description>
                 </Skip>
                 <Skip>
                   <Student>
@@ -4590,7 +4592,7 @@
                     <Surname>Хломко</Surname>
                     <Thirdname>Олеговна</Thirdname>
                   </Student>
-                  <IsAbsent>true</IsAbsent>
+                  <IsAbsent>false</IsAbsent>
                 </Skip>
                 <Skip>
                   <Student>
@@ -8536,7 +8538,8 @@
                   <Surname>Алфименков</Surname>
                   <Thirdname>Евгеньевич</Thirdname>
                 </Student>
-                <IsAbsent>false</IsAbsent>
+                <IsAbsent>true</IsAbsent>
+                <Description>Уважительная (прогул)</Description>
               </Skip>
               <Skip>
                 <Student>
@@ -8576,7 +8579,8 @@
                   <Surname>Карасев</Surname>
                   <Thirdname>Александрович</Thirdname>
                 </Student>
-                <IsAbsent>false</IsAbsent>
+                <IsAbsent>true</IsAbsent>
+                <Description>Уважительная (военный факультет)</Description>
               </Skip>
               <Skip>
                 <Student>
@@ -8704,7 +8708,7 @@
                   <Surname>Хломко</Surname>
                   <Thirdname>Олеговна</Thirdname>
                 </Student>
-                <IsAbsent>true</IsAbsent>
+                <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
                 <Student>
