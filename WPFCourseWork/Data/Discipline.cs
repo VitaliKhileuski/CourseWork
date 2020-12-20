@@ -40,26 +40,11 @@ namespace WPFCourseWork.Data
         {
             this.DisciplineP = discipline.DisciplineP;
             this.Teacher = discipline.Teacher;
-            this.Skips = discipline.Skips;
+            this.Skips =new ObservableCollection<Skip>(discipline.Skips);
         }
         public override string ToString()
         {
-            //string s=string.Empty;
-
-            //string[] temp = DisciplineP.Split(' ');
-            //if (temp.Length > 2)
-            //{
-            //    for(int i = 0; i < temp.Length; i++)
-            //    {
-            //        if (i % 2 == 1)
-            //        {
-            //            s +=temp[i]+"\n";
-            //        }
-            //        else s += temp[i];
-
-            //    }
-            //    return s;
-            //}
+            
             return discipline;
         }
     }

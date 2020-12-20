@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using WPFCourseWork.Commands;
 using WPFCourseWork.Data;
 using WPFCourseWork.Models.ElementsOfUniversity;
@@ -69,8 +70,24 @@ namespace WPFCourseWork.ViewModels
             }
             }
         #endregion
-        
 
+        #region Create doxc table command
+        private LambdaCommand createDocxCommand;
+        private bool CanCreateDocxCommand(object p) => true;
+        private void OnCreateDocxCommandExecuted(object p)
+        {
+            DocxTable docx = new DocxTable(weeksData);
+            docx.CreateTable();
+            MessageBox.Show("Успешно создан");
+        }
+        public LambdaCommand CreateDocxCommand
+        {
+            get
+            {
+                return createDocxCommand = new LambdaCommand(OnCreateDocxCommandExecuted, CanCreateDocxCommand);
+            }
+        }
+        #endregion
         public WeekListViewModel(IMainWindowsCodeBehind codeBehind ,WeeksDataBase weeksData) 
         {
             _MainCodeBehind = codeBehind;
@@ -94,6 +111,10 @@ namespace WPFCourseWork.ViewModels
             }
             else
             {
+                if(DateTime.Today.Subtract(Weeks[Weeks.Count - 1].EndOfTheWeek).Days >0  && DateTime.Today.Subtract(Weeks[Weeks.Count - 1].EndOfTheWeek).Days < 7)
+                {
+                    SetNewWeek(temp);
+                }
                 while (DateTime.Today.Subtract(Weeks[Weeks.Count-1].EndOfTheWeek).Days > 7)
                 {
                     Week week = new Week(Weeks[Weeks.Count - 1].EndOfTheWeek.AddDays(1));

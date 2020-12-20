@@ -34,6 +34,12 @@ namespace WPFCourseWork.Models.ElementsOfUniversity
             StudentDays = new ObservableCollection<StudentDay>();
 
         }
+        public Week(Week week)
+        {
+            StartOfTheWeek = week.StartOfTheWeek;
+            EndOfTheWeek = week.EndOfTheWeek;
+            StudentDays = week.StudentDays;
+        }
         public Week(DateTime startOfTheWeek)
         {
             StartOfTheWeek = startOfTheWeek;

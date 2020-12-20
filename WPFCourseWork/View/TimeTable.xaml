@@ -17,7 +17,12 @@
             <ColumnDefinition Width="19*"></ColumnDefinition>
             <ColumnDefinition Width="auto"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <DataGrid IsReadOnly="False"   CurrentCell="{Binding Temp}" SelectedIndex="{Binding Temp,Mode=TwoWay}"   x:Name="DataGrid" SelectionMode="Single"  Background="White"    SelectionUnit="Cell"  MinRowHeight="80" ItemsSource="{Binding StudentDays,UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="False"  VerticalScrollBarVisibility="Disabled"  CanUserAddRows="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserDeleteRows="False">
+        <DataGrid IsReadOnly="False" TextBlock.TextAlignment="Center"   CurrentCell="{Binding Temp}" SelectedIndex="{Binding Temp,Mode=TwoWay}"   x:Name="DataGrid" SelectionMode="Single"  Background="White"    SelectionUnit="Cell"  MinRowHeight="80" ItemsSource="{Binding StudentDays,UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="False"  VerticalScrollBarVisibility="Disabled"  CanUserAddRows="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserDeleteRows="False">
+            <DataGrid.Resources>
+                <Style TargetType="TextBlock" x:Key="WrapText">
+                    <Setter Property="TextWrapping" Value="Wrap"/>
+                </Style>
+            </DataGrid.Resources>
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="PreparingCellForEdit">
                     <i:InvokeCommandAction
@@ -31,33 +36,32 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
             <DataGrid.Columns>
-                <DataGridTextColumn  Width="0.5*" IsReadOnly="True" Binding="{Binding DayOfWeek}"  Header="день недели">
+                <DataGridTextColumn  Width="0.5*" IsReadOnly="True" Binding="{Binding DayOfWeek}" FontWeight="Bold" Header="день недели">
 
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="0.25*" IsReadOnly="True" Binding="{Binding Date, StringFormat='{}{0:dd.MM}'}" Header="дата">
-
+                <DataGridTextColumn  Width="0.25*" IsReadOnly="True"  Binding="{Binding Date, StringFormat='{}{0:dd.MM}'}"  FontWeight="Bold" Header="дата">
                 </DataGridTextColumn>
-                <DataGridTextColumn Width="*" Binding="{Binding Lessons[0],UpdateSourceTrigger=PropertyChanged}">
+                <DataGridTextColumn Binding="{Binding Lessons[0],UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource WrapText}" Width="*">
                     <DataGridTextColumn.Header>
                         <TextBlock FontWeight="Bold" Text="Первая пара" Margin="30 0 0 0"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn Width="*" Binding="{Binding Lessons[1],UpdateSourceTrigger=PropertyChanged}">
+                <DataGridTextColumn Width="*" Binding="{Binding Lessons[1],UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource WrapText}">
                     <DataGridTextColumn.Header>
                         <TextBlock FontWeight="Bold" Text="Вторая пара" Margin="30 0 0 0"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn Width="*" Binding="{Binding Lessons[2],UpdateSourceTrigger=PropertyChanged}">
+                <DataGridTextColumn Width="*" Binding="{Binding Lessons[2],UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource WrapText}">
                     <DataGridTextColumn.Header>
                         <TextBlock FontWeight="Bold" TextWrapping="Wrap" Text="Третья пара" Margin="30 0 0 0"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn Width="*" Binding="{Binding Lessons[3],UpdateSourceTrigger=PropertyChanged}">
+                <DataGridTextColumn Width="*" Binding="{Binding Lessons[3],UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource WrapText}">
                     <DataGridTextColumn.Header>
                         <TextBlock FontWeight="Bold" Text="Четвертая пара" Margin="30 0 0 0"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn Width="*" Binding="{Binding Lessons[4],UpdateSourceTrigger=PropertyChanged}">
+                <DataGridTextColumn Width="*" Binding="{Binding Lessons[4],UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource WrapText}">
                     <DataGridTextColumn.Header>
                         <TextBlock FontWeight="Bold" Text="Пятая пара" Margin="30 0 0 0"></TextBlock>
                     </DataGridTextColumn.Header>

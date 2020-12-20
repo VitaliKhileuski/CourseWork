@@ -76,7 +76,6 @@
     <Compile Include="Data\Semestre.cs" />
     <Compile Include="Data\WeeksDataBase.cs" />
     <Compile Include="DocxTable.cs" />
-    <Compile Include="Models\ElementsOfUniversity\Lesson.cs" />
     <Compile Include="Models\ElementsOfUniversity\Skip.cs" />
     <Compile Include="Models\ElementsOfUniversity\StudentDay.cs" />
     <Compile Include="Models\ElementsOfUniversity\StudentGroup.cs" />

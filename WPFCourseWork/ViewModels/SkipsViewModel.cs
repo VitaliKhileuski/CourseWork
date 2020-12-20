@@ -26,14 +26,14 @@ namespace WPFCourseWork.ViewModels
         private WeeksDataBase weeksDataBase;
         private skips codeBehind;
         private Teacher teacher;
-        private string discipline;
+        private string discipline2;
 
 
         private Discipline currentDiscipline;
 
 
         public Teacher Teacher { get => teacher; set => Set(ref teacher, value); }
-        public string Discipline { get => discipline; set => Set(ref discipline, value); }
+        public string Discipline { get => discipline2; set => Set(ref discipline2, value); }
         public int DayIndex { get => dayIndex; set => Set(ref dayIndex, value); }
         public int LessonIndex { get => lessonIndex; set => Set(ref lessonIndex, value); }
         public Discipline CurrentDiscipline { get => currentDiscipline; set => Set(ref currentDiscipline, value); }
@@ -65,9 +65,9 @@ namespace WPFCourseWork.ViewModels
             Skips = new ObservableCollection<Skip>();
             codeBehind = view;
            // SetGroupSkips();
-            CurrentDiscipline = discipline;
+            CurrentDiscipline =new Discipline(discipline);
             Teacher = CurrentDiscipline.Teacher;
-            Discipline = CurrentDiscipline.DisciplineP;
+            Discipline =CurrentDiscipline.DisciplineP;
             
             DayIndex = dayindex;
             LessonIndex = lessonIndex;

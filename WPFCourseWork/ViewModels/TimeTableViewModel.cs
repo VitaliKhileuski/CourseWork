@@ -84,16 +84,20 @@ namespace WPFCourseWork.ViewModels
         #region fill skips
         private LambdaCommand fillSkipsCommand;
 
-        private bool CanFillSkipsCommandExecute(object p) => p is Discipline;
+        private bool CanFillSkipsCommandExecute(object p) => p is Discipline  discipline &&  !(string.IsNullOrEmpty(discipline.DisciplineP));
         private void OnFillSkipsCommandExecuted(object p)
         {
+            
             if (p is Discipline discipline)
             {
                 skips SkipsWindow = new skips();
                 SkipsViewModel skipsViewModel = new SkipsViewModel(weeksData, SkipsWindow,discipline,DayIndex,LessonIndex);
                 SkipsWindow.DataContext = skipsViewModel;
                 SkipsWindow.Show();
+                
+   
             }
+            
         }
         public LambdaCommand FillSkipsCommand
         {
@@ -108,11 +112,16 @@ namespace WPFCourseWork.ViewModels
         private bool CanSelectedCommandExecute(object p) => true;
         private void OnSelectedCommandExecuted(object p)
         {
+
+
            
             var res = timeTableView.DataGrid.CurrentCell.Column.DisplayIndex;
             StudentDay a = (StudentDay)timeTableView.DataGrid.CurrentCell.Item;
-            NewSelectedItem = a.Lessons[res - 2];
-        
+            if (a.Lessons[res - 2] != null)
+            {
+                NewSelectedItem = new Discipline(a.Lessons[res - 2]);
+            }
+
 
         }
         public LambdaCommand SelectedCommand
@@ -126,7 +135,7 @@ namespace WPFCourseWork.ViewModels
         {
             _MainCodeBehind = codeBehind;
             weeksData = weeksDataBase;
-            CurrentWeek = weeksData.SelectedWeek;
+            CurrentWeek =new Week(weeksData.SelectedWeek);
             StudentDays = CurrentWeek.StudentDays;
             
             allDisciplines = disciplinesDataBase;
@@ -140,7 +149,7 @@ namespace WPFCourseWork.ViewModels
 
         private Semestre SetDisciplines(StudentGroup group, DisciplinesDataBase data)
         {
-
+            
             Semestre temp = new Semestre();
             for (int i = 0; i < data.allDisciplines.Count; i++)
             {
@@ -149,7 +158,6 @@ namespace WPFCourseWork.ViewModels
                     temp = data.allDisciplines[i];
                 }
             }
-           
          return temp;
         }
 
@@ -167,16 +175,48 @@ namespace WPFCourseWork.ViewModels
             {
                 if (TempCell.DayOfWeek == StudentDays[i].DayOfWeek)
                 {
-                    StudentDays[i].Lessons[res-2] = SelectedDiscipline;
-                    p = i;
-                    DayIndex = i;
-                    LessonIndex = res - 2;
-                    break;
+
+                    if (SelectedDiscipline != null)
+                    {
+                        StudentDays[i].Lessons[res - 2] = new Discipline(SelectedDiscipline);
+                        p = i;
+                        DayIndex = i;
+                        LessonIndex = res - 2;
+                        SelectedDiscipline = null;
+                        break;
+                    }
+                    else
+                    {
+                        StudentDays[i].Lessons[res - 2] = new Discipline();
+                        p = i;
+                        DayIndex = i;
+                        LessonIndex = res - 2;
+                        SelectedDiscipline = null;
+                        break;
+
+                    }
+                    
                 }
             }
+            
             timeTableView.DataGrid.ItemsSource = null;
             timeTableView.DataGrid.ItemsSource = StudentDays;
-            SelectedDisciplineForSKips = StudentDays[p].Lessons[res - 2];
+            SelectedDisciplineForSKips =new Discipline(StudentDays[p].Lessons[res - 2]);
+          
+
+           
         }
+        private void ClearListView()
+        {
+            foreach(var discipline in Disciplines)
+            {
+                foreach(var skip in discipline.Skips)
+                {
+                    skip.IsAbsent = false;
+                    skip.Description = string.Empty;
+                }
+            }
+        }
+
     }
 }
