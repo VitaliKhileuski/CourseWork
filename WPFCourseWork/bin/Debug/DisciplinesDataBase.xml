@@ -230,17 +230,17 @@
       </Discipline>
       <Discipline>
         <Teacher>
-          <Name>Иван</Name>
-          <Surname>Иванов</Surname>
-          <Thirdname>Иванович</Thirdname>
+          <Name>Ирина</Name>
+          <Surname>Просвирнина</Surname>
+          <Thirdname>Борисовна</Thirdname>
         </Teacher>
         <DisciplineP>Дискретная математика</DisciplineP>
       </Discipline>
       <Discipline>
         <Teacher>
-          <Name>Иван</Name>
-          <Surname>Иванов</Surname>
-          <Thirdname>Иванович</Thirdname>
+          <Name>Елена</Name>
+          <Surname>Бутько</Surname>
+          <Thirdname>Сергеевна</Thirdname>
         </Teacher>
         <DisciplineP>Иностранный язык (профессиональное использование)</DisciplineP>
       </Discipline>
@@ -254,17 +254,17 @@
       </Discipline>
       <Discipline>
         <Teacher>
-          <Name>Иван</Name>
-          <Surname>Иванов</Surname>
-          <Thirdname>Иванович</Thirdname>
+          <Name>Анна</Name>
+          <Surname>Карканица</Surname>
+          <Thirdname>Викторовна</Thirdname>
         </Teacher>
         <DisciplineP>Курсовой проект по дисциплине 'Языки программирования'</DisciplineP>
       </Discipline>
       <Discipline>
         <Teacher>
-          <Name>Иван</Name>
-          <Surname>Иванов</Surname>
-          <Thirdname>Иванович</Thirdname>
+          <Name>Александр</Name>
+          <Surname>Гринь</Surname>
+          <Thirdname>Александрович</Thirdname>
         </Teacher>
         <DisciplineP>Математика</DisciplineP>
       </Discipline>
@@ -294,9 +294,9 @@
       </Discipline>
       <Discipline>
         <Teacher>
-          <Name>Иван</Name>
-          <Surname>Иванов</Surname>
-          <Thirdname>Иванович</Thirdname>
+          <Name>Юлия</Name>
+          <Surname>Федосова</Surname>
+          <Thirdname>Анатольевна</Thirdname>
         </Teacher>
         <DisciplineP>Социология</DisciplineP>
       </Discipline>
@@ -310,25 +310,25 @@
       </Discipline>
       <Discipline>
         <Teacher>
-          <Name>Иван</Name>
-          <Surname>Иванов</Surname>
-          <Thirdname>Иванович</Thirdname>
+          <Name>Анна</Name>
+          <Surname>Карканица</Surname>
+          <Thirdname>Викторовна</Thirdname>
         </Teacher>
         <DisciplineP>Языки программирования</DisciplineP>
       </Discipline>
       <Discipline>
         <Teacher>
-          <Name>Иван</Name>
+          <Name>Виктор</Name>
           <Surname>Иванов</Surname>
-          <Thirdname>Иванович</Thirdname>
+          <Thirdname>Александрович</Thirdname>
         </Teacher>
         <DisciplineP>Физическая культура</DisciplineP>
       </Discipline>
       <Discipline>
         <Teacher>
-          <Name>Иван</Name>
+          <Name>Виктор</Name>
           <Surname>Иванов</Surname>
-          <Thirdname>Иванович</Thirdname>
+          <Thirdname>Александрович</Thirdname>
         </Teacher>
         <DisciplineP>Физическая культура(легкая атлетика)</DisciplineP>
       </Discipline>

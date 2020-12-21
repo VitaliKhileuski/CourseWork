@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
+using Microsoft.Win32;
 using WPFCourseWork.Data;
 using WPFCourseWork.Models.ElementsOfUniversity;
 using WPFCourseWork.Models.Persons;
@@ -26,14 +27,28 @@ namespace WPFCourseWork
         }
         public void CreateTable()
         {
-
+            
+            string fileName1 = "";
+            SaveFileDialog path = new SaveFileDialog();
+            
+            path.DefaultExt = "docx";
+            
+            path.ShowDialog();
+            fileName1=path.FileName;
 
             string temp = Getstring();
-            string fileName = @"C:\test\exempleWord3.docx";
-            var doc = DocX.Create(fileName);
+            var doc = DocX.Create(fileName1);
+            
+            
             doc.InsertParagraph($"Пропуски за неделю ({data.StudentGroup.Semestr} семестр)").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center;
-            doc.InsertParagraph(temp).Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center;
-
+            doc.InsertParagraph();
+            doc.InsertParagraph("(").Bold().FontSize(12).Font("TimesNewRoman").Append(temp).Bold().FontSize(12).Font("TimesNewRoman").Highlight(Highlight.yellow).Append(")").Bold().FontSize(12).Font("TimesNewRoman").Alignment = Alignment.center;
+            doc.InsertParagraph();
+            doc.InsertParagraph($"СДП-{data.StudentGroup.Speciality}-{data.StudentGroup.GroupNumber}").FontSize(12).Font("TimesNewRoman").Highlight(Highlight.yellow).Bold().Alignment = Alignment.center; 
+            doc.InsertParagraph();
+            doc.InsertParagraph("Староста: ").Font("TimesNewRoman").FontSize(12).Bold().Append($"{ data.StudentGroup.HeadOfTheGroup.Surname} {data.StudentGroup.HeadOfTheGroup.Name[0]}.{data.StudentGroup.HeadOfTheGroup.Thirdname[0]}.").Highlight(Highlight.yellow).Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center;
+            doc.InsertParagraph();
+           
 
 
             int numberOfSkips = CalculateSkips();
@@ -67,7 +82,6 @@ namespace WPFCourseWork
             columnIndex++;
             table.Rows[rowIndex].Cells[columnIndex].Paragraphs.First().Append("Причина").Font("TimesNewRoman").FontSize(12).Bold().Alignment = Alignment.center; 
             columnIndex = 0;
-            
             foreach(var studentDay in week.StudentDays)
             {
                 for(int i = 0; i < studentDay.Lessons.Count; i++)
@@ -150,7 +164,7 @@ namespace WPFCourseWork
             string currentMonth = months[week.StartOfTheWeek.Month - 1];
             
 
-            string temp =$"с {week.StartOfTheWeek.Day} по {week.EndOfTheWeek.Day} {currentMonth}";
+            string temp =$"с {week.StartOfTheWeek.Day} по {week.EndOfTheWeek.Day} {currentMonth} {week.StartOfTheWeek.Year} года";
             
 
 

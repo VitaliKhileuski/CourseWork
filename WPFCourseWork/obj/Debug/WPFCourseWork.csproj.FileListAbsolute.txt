@@ -32,3 +32,5 @@ C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\Vie
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\obj\Debug\WPFCourseWork.csprojAssemblyReference.cache
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\Xceed.Document.NET.dll
 C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\Xceed.Words.NET.dll
+C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\MaterialDesignColors.dll
+C:\Users\Vitali Khileuski\source\repos\WPFCourseWork\WPFCourseWork\bin\Debug\MaterialDesignColors.pdb

@@ -1330,239 +1330,7 @@
         <StudentDay>
           <Lessons>
             <Discipline>
-              <Teacher>
-                <Name>Иван</Name>
-                <Surname>Иванов</Surname>
-                <Thirdname>Иванович</Thirdname>
-              </Teacher>
-              <DisciplineP>Математика</DisciplineP>
-              <Skips>
-                <Skip>
-                  <Student>
-                    <Name>Илья</Name>
-                    <Surname>Авжи</Surname>
-                    <Thirdname>Юрьевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Юлиан</Name>
-                    <Surname>Айрапетов</Surname>
-                    <Thirdname>Юрьевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Адам</Name>
-                    <Surname>Алещик</Surname>
-                    <Thirdname>Павлович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Игорь</Name>
-                    <Surname>Алфименков</Surname>
-                    <Thirdname>Евгеньевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Матвей</Name>
-                    <Surname>Ганевич</Surname>
-                    <Thirdname>Валерьевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Алексей</Name>
-                    <Surname>Гинель</Surname>
-                    <Thirdname>Юрьевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Михаил</Name>
-                    <Surname>Дейкун</Surname>
-                    <Thirdname>Сергеевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Екатерина</Name>
-                    <Surname>Иваненко</Surname>
-                    <Thirdname>Ивановна</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Максим</Name>
-                    <Surname>Карасев</Surname>
-                    <Thirdname>Александрович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Дмитрий</Name>
-                    <Surname>Карканица</Surname>
-                    <Thirdname>Михайлович</Thirdname>
-                  </Student>
-                  <IsAbsent>true</IsAbsent>
-                  <Description>m,</Description>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Сергей</Name>
-                    <Surname>Ключник</Surname>
-                    <Thirdname>Александрович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Артем</Name>
-                    <Surname>Крищик</Surname>
-                    <Thirdname>Андреевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Арсений</Name>
-                    <Surname>Мартиросянц</Surname>
-                    <Thirdname>Артурович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Дмитрий</Name>
-                    <Surname>Машков</Surname>
-                    <Thirdname>Евгеньевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Артем</Name>
-                    <Surname>Мирошниченко</Surname>
-                    <Thirdname>Андреевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Дарья</Name>
-                    <Surname>Пальчик</Surname>
-                    <Thirdname>Владимировна</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Максим</Name>
-                    <Surname>Пашковский</Surname>
-                    <Thirdname>Александрович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Павел</Name>
-                    <Surname>Прудилко</Surname>
-                    <Thirdname>Викторович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Артем</Name>
-                    <Surname>Сакович</Surname>
-                    <Thirdname>Сергеевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Вячеслав</Name>
-                    <Surname>Салей</Surname>
-                    <Thirdname>Олегович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Максим</Name>
-                    <Surname>Самсонович</Surname>
-                    <Thirdname>Александрович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Дарья</Name>
-                    <Surname>Семиш</Surname>
-                    <Thirdname>Ивановна</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Максим</Name>
-                    <Surname>Силов</Surname>
-                    <Thirdname>Олегович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Виталий</Name>
-                    <Surname>Хилевский</Surname>
-                    <Thirdname>Андреевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Диана</Name>
-                    <Surname>Хломко</Surname>
-                    <Thirdname>Олеговна</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Ольга</Name>
-                    <Surname>Чувак</Surname>
-                    <Thirdname>Викторовна</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Александр</Name>
-                    <Surname>Шабанович</Surname>
-                    <Thirdname>Яковлевич</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student>
-                    <Name>Родион</Name>
-                    <Surname>Шарапов</Surname>
-                    <Thirdname>Иванович</Thirdname>
-                  </Student>
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-              </Skips>
+              <Skips />
             </Discipline>
             <Discipline>
               <Skips>
@@ -2621,120 +2389,7 @@
         <StudentDay>
           <Lessons>
             <Discipline>
-              <Skips>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-              </Skips>
+              <Skips />
             </Discipline>
             <Discipline>
               <Skips>
@@ -3207,236 +2862,10 @@
         <StudentDay>
           <Lessons>
             <Discipline>
-              <Skips>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-              </Skips>
+              <Skips />
             </Discipline>
             <Discipline>
-              <Skips>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-                <Skip>
-                  <Student />
-                  <IsAbsent>false</IsAbsent>
-                </Skip>
-              </Skips>
+              <Skips />
             </Discipline>
             <Discipline>
               <Skips>
@@ -4386,9 +3815,9 @@
           <Lessons>
             <Discipline>
               <Teacher>
-                <Name>Иван</Name>
-                <Surname>Иванов</Surname>
-                <Thirdname>Иванович</Thirdname>
+                <Name>Анна</Name>
+                <Surname>Карканица</Surname>
+                <Thirdname>Викторовна</Thirdname>
               </Teacher>
               <DisciplineP>Курсовой проект по дисциплине 'Языки программирования'</DisciplineP>
               <Skips>
@@ -4422,8 +3851,7 @@
                     <Surname>Алфименков</Surname>
                     <Thirdname>Евгеньевич</Thirdname>
                   </Student>
-                  <IsAbsent>true</IsAbsent>
-                  <Description>Уважительная (прогул)</Description>
+                  <IsAbsent>false</IsAbsent>
                 </Skip>
                 <Skip>
                   <Student>
@@ -4463,8 +3891,7 @@
                     <Surname>Карасев</Surname>
                     <Thirdname>Александрович</Thirdname>
                   </Student>
-                  <IsAbsent>true</IsAbsent>
-                  <Description>Уважительная (военный факультет)</Description>
+                  <IsAbsent>false</IsAbsent>
                 </Skip>
                 <Skip>
                   <Student>
@@ -4560,7 +3987,8 @@
                     <Surname>Самсонович</Surname>
                     <Thirdname>Александрович</Thirdname>
                   </Student>
-                  <IsAbsent>false</IsAbsent>
+                  <IsAbsent>true</IsAbsent>
+                  <Description>Неуважительная (прогул)</Description>
                 </Skip>
                 <Skip>
                   <Student>
@@ -8501,237 +7929,117 @@
       <StudentDay>
         <Lessons>
           <Discipline>
-            <Teacher>
-              <Name>Иван</Name>
-              <Surname>Иванов</Surname>
-              <Thirdname>Иванович</Thirdname>
-            </Teacher>
-            <DisciplineP>Курсовой проект по дисциплине 'Языки программирования'</DisciplineP>
             <Skips>
               <Skip>
-                <Student>
-                  <Name>Илья</Name>
-                  <Surname>Авжи</Surname>
-                  <Thirdname>Юрьевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Юлиан</Name>
-                  <Surname>Айрапетов</Surname>
-                  <Thirdname>Юрьевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Адам</Name>
-                  <Surname>Алещик</Surname>
-                  <Thirdname>Павлович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Игорь</Name>
-                  <Surname>Алфименков</Surname>
-                  <Thirdname>Евгеньевич</Thirdname>
-                </Student>
-                <IsAbsent>true</IsAbsent>
-                <Description>Уважительная (прогул)</Description>
-              </Skip>
-              <Skip>
-                <Student>
-                  <Name>Матвей</Name>
-                  <Surname>Ганевич</Surname>
-                  <Thirdname>Валерьевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Алексей</Name>
-                  <Surname>Гинель</Surname>
-                  <Thirdname>Юрьевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Михаил</Name>
-                  <Surname>Дейкун</Surname>
-                  <Thirdname>Сергеевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Екатерина</Name>
-                  <Surname>Иваненко</Surname>
-                  <Thirdname>Ивановна</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Максим</Name>
-                  <Surname>Карасев</Surname>
-                  <Thirdname>Александрович</Thirdname>
-                </Student>
-                <IsAbsent>true</IsAbsent>
-                <Description>Уважительная (военный факультет)</Description>
-              </Skip>
-              <Skip>
-                <Student>
-                  <Name>Дмитрий</Name>
-                  <Surname>Карканица</Surname>
-                  <Thirdname>Михайлович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Сергей</Name>
-                  <Surname>Ключник</Surname>
-                  <Thirdname>Александрович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Артем</Name>
-                  <Surname>Крищик</Surname>
-                  <Thirdname>Андреевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Арсений</Name>
-                  <Surname>Мартиросянц</Surname>
-                  <Thirdname>Артурович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Дмитрий</Name>
-                  <Surname>Машков</Surname>
-                  <Thirdname>Евгеньевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Артем</Name>
-                  <Surname>Мирошниченко</Surname>
-                  <Thirdname>Андреевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Дарья</Name>
-                  <Surname>Пальчик</Surname>
-                  <Thirdname>Владимировна</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Максим</Name>
-                  <Surname>Пашковский</Surname>
-                  <Thirdname>Александрович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Павел</Name>
-                  <Surname>Прудилко</Surname>
-                  <Thirdname>Викторович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Артем</Name>
-                  <Surname>Сакович</Surname>
-                  <Thirdname>Сергеевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Вячеслав</Name>
-                  <Surname>Салей</Surname>
-                  <Thirdname>Олегович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Максим</Name>
-                  <Surname>Самсонович</Surname>
-                  <Thirdname>Александрович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Дарья</Name>
-                  <Surname>Семиш</Surname>
-                  <Thirdname>Ивановна</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Максим</Name>
-                  <Surname>Силов</Surname>
-                  <Thirdname>Олегович</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Виталий</Name>
-                  <Surname>Хилевский</Surname>
-                  <Thirdname>Андреевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Диана</Name>
-                  <Surname>Хломко</Surname>
-                  <Thirdname>Олеговна</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Ольга</Name>
-                  <Surname>Чувак</Surname>
-                  <Thirdname>Викторовна</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Александр</Name>
-                  <Surname>Шабанович</Surname>
-                  <Thirdname>Яковлевич</Thirdname>
-                </Student>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
               <Skip>
-                <Student>
-                  <Name>Родион</Name>
-                  <Surname>Шарапов</Surname>
-                  <Thirdname>Иванович</Thirdname>
-                </Student>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
                 <IsAbsent>false</IsAbsent>
               </Skip>
             </Skips>
@@ -9201,7 +8509,7 @@
             </Skips>
           </Discipline>
         </Lessons>
-        <Date>2020-12-21T00:00:00+03:00</Date>
+        <Date>2020-12-14T00:00:00+03:00</Date>
         <DayOfWeek>Monday</DayOfWeek>
       </StudentDay>
       <StudentDay>
@@ -9787,243 +9095,11 @@
             </Skips>
           </Discipline>
         </Lessons>
-        <Date>2020-12-22T00:00:00+03:00</Date>
+        <Date>2020-12-15T00:00:00+03:00</Date>
         <DayOfWeek>Tuesday</DayOfWeek>
       </StudentDay>
       <StudentDay>
         <Lessons>
-          <Discipline>
-            <Skips>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-            </Skips>
-          </Discipline>
-          <Discipline>
-            <Skips>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-            </Skips>
-          </Discipline>
           <Discipline>
             <Skips />
           </Discipline>
@@ -10259,8 +9335,240 @@
               </Skip>
             </Skips>
           </Discipline>
+          <Discipline>
+            <Skips>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+            </Skips>
+          </Discipline>
+          <Discipline>
+            <Skips>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+              <Skip>
+                <Student />
+                <IsAbsent>false</IsAbsent>
+              </Skip>
+            </Skips>
+          </Discipline>
         </Lessons>
-        <Date>2020-12-23T00:00:00+03:00</Date>
+        <Date>2020-12-16T00:00:00+03:00</Date>
         <DayOfWeek>Wednesday</DayOfWeek>
       </StudentDay>
       <StudentDay>
@@ -10846,126 +10154,13 @@
             </Skips>
           </Discipline>
         </Lessons>
-        <Date>2020-12-24T00:00:00+03:00</Date>
+        <Date>2020-12-17T00:00:00+03:00</Date>
         <DayOfWeek>Thursday</DayOfWeek>
       </StudentDay>
       <StudentDay>
         <Lessons>
           <Discipline>
-            <Skips>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-            </Skips>
+            <Skips />
           </Discipline>
           <Discipline>
             <Skips>
@@ -11432,242 +10627,16 @@
             </Skips>
           </Discipline>
         </Lessons>
-        <Date>2020-12-25T00:00:00+03:00</Date>
+        <Date>2020-12-18T00:00:00+03:00</Date>
         <DayOfWeek>Friday</DayOfWeek>
       </StudentDay>
       <StudentDay>
         <Lessons>
           <Discipline>
-            <Skips>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-            </Skips>
+            <Skips />
           </Discipline>
           <Discipline>
-            <Skips>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-              <Skip>
-                <Student />
-                <IsAbsent>false</IsAbsent>
-              </Skip>
-            </Skips>
+            <Skips />
           </Discipline>
           <Discipline>
             <Skips>
@@ -12018,7 +10987,7 @@
             </Skips>
           </Discipline>
         </Lessons>
-        <Date>2020-12-26T00:00:00+03:00</Date>
+        <Date>2020-12-19T00:00:00+03:00</Date>
         <DayOfWeek>Saturday</DayOfWeek>
       </StudentDay>
       <StudentDay>
@@ -12604,11 +11573,11 @@
             </Skips>
           </Discipline>
         </Lessons>
-        <Date>2020-12-27T00:00:00+03:00</Date>
+        <Date>2020-12-20T00:00:00+03:00</Date>
         <DayOfWeek>Sunday</DayOfWeek>
       </StudentDay>
     </StudentDays>
-    <StartOfTheWeek>2020-12-21T00:00:00+03:00</StartOfTheWeek>
-    <EndOfTheWeek>2020-12-27T00:00:00+03:00</EndOfTheWeek>
+    <StartOfTheWeek>2020-12-14T00:00:00+03:00</StartOfTheWeek>
+    <EndOfTheWeek>2020-12-20T00:00:00+03:00</EndOfTheWeek>
   </SelectedWeek>
 </WeeksDataBase>
